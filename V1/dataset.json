@@ -1,0 +1,88 @@
+{
+  "intents": [
+    {
+      "text": "I want to explore the wildlife in Sri Lanka.",
+      "tags": ["wildlife"]
+    },
+    {
+      "text": "A wildlife sanctuary in the heart of Sri Lanka's natural beauty.",
+      "tags": ["wildlife"]
+    },
+    {
+      "text": "wildlife",
+      "tags": ["wildlife"]
+    },
+    {
+      "text": "Visit the lush greenery and discover unique wildlife species in Sri Lanka.",
+      "tags": ["wildlife"]
+    },
+    {
+      "text": "Chasing waterfalls in Sri Lanka sounds like a dream vacation.",
+      "tags": ["waterfalls"]
+    },
+    {
+      "text": "Immerse yourself in the serenity of Sri Lanka's majestic waterfalls.",
+      "tags": ["waterfalls"]
+    },
+    {
+      "text": "Hike through dense forests to find hidden waterfalls in Sri Lanka.",
+      "tags": ["waterfalls"]
+    },
+    {
+      "text": "I want to visit mountains around Sri Lanka.",
+      "tags": ["mountains"]
+    },
+    {
+      "text": "Explore the breathtaking mountain ranges in Sri Lanka.",
+      "tags": ["mountains"]
+    },
+    {
+      "text": "A peaceful retreat nestled in the mountains of Sri Lanka.",
+      "tags": ["mountains"]
+    },
+    {
+      "text": "Mountain",
+      "tags": ["mountains"]
+    },
+    {
+      "text": "I want to visit beaches around Sri Lanka.",
+      "tags": ["beaches"]
+    },
+    {
+      "text": "Sandy beaches full of sun and fun.",
+      "tags": ["beaches"]
+    },
+    {
+      "text": "Beautiful beach surrounded by mountains.",
+      "tags": ["beaches", "mountains"]
+    },
+    {
+      "text": "A mountain range with a golden sandy beautiful beach.",
+      "tags": ["beaches", "mountains"]
+    },
+    {
+      "text": "Beaches",
+      "tags": ["beaches"]
+    },
+    {
+      "text": "Experience the thrill of encountering wildlife on the pristine beaches of Sri Lanka.",
+      "tags": ["beaches", "wildlife"]
+    },
+    {
+      "text": "Relax on the beach and listen to the soothing sounds of nearby waterfalls in Sri Lanka.",
+      "tags": ["beaches", "waterfalls"]
+    },
+    {
+      "text": "A magical combination of mountains, beaches, and wildlife awaits you in Sri Lanka.",
+      "tags": ["beaches", "mountains", "wildlife"]
+    },
+    {
+      "text": "Discover hidden waterfalls as you trek through the mountainous landscapes of Sri Lanka.",
+      "tags": ["mountains", "waterfalls"]
+    },
+    {
+      "text": "The pristine beaches are adorned with vibrant wildlife, where coastal ecosystems thrive, featuring diverse bird species, marine life, and lush vegetation.",
+      "tags": ["beaches", "wildlife"]
+    }
+  ]
+}
