@@ -83,6 +83,14 @@
     {
       "text": "The pristine beaches are adorned with vibrant wildlife, where coastal ecosystems thrive, featuring diverse bird species, marine life, and lush vegetation.",
       "tags": ["beaches", "wildlife"]
+    },
+    {
+      "text": "I want to go camping in the mountains to have an adventurous trip and to feel the fresh air",
+      "tags": ["camping", "mountains"]
+    },
+    {
+      "text": "Suggest some locations which are great for camping",
+      "tags": ["camping"]
     }
   ]
 }

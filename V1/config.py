@@ -36,6 +36,3 @@ def getDataset():
         print("An Error Occured When reading Dataset: ", e)
 
     return dataset
-
-print(tags)
-print(getDataset()[4])

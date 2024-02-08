@@ -4,19 +4,19 @@ from RuuGPTV1 import RuuGPTV1
 from NLPEngineV1 import getVocabSize, sentenceToIds
 from config import tags
 
-modeldata = torch.load('V1/model2.pth')
+modeldata = torch.load('V1/models/model5.pth')
 
-vocab_size = getVocabSize()
-embedding_dim = 50
+vocab_size = modeldata['vocab_size']
+embedding_dim = modeldata['embedding_dim']
 
-hidden_size = 18
-output_size = len(tags)
-dropout = 0.5
+hidden_size = modeldata['hidden_size']
+output_size = modeldata['output_size']
+dropout =  modeldata['dropout']
 
 
 model = RuuGPTV1(vocab_size,embedding_dim,hidden_size,output_size,dropout)
 
-model.load_state_dict(modeldata)
+model.load_state_dict(modeldata['state_dict'])
 
 model.eval()
 

@@ -28,6 +28,10 @@ try:
     op = input("Make new version of the model? (y/any): ")
     if op == 'y':
         modelPath = input("Enter new model path: ")
+    
+    
+    if (modeldata["output_size"] != output_size):
+        model.fc = nn.Linear(in_features=hidden_size, out_features=output_size)
 
 except:
     print(f"Creating new model at {modelPath}")
