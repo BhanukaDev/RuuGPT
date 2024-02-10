@@ -8,6 +8,7 @@ class RuuGPTV1(nn.Module):
         self.lstm = nn.LSTM(input_size=embedding_dim, hidden_size=hidden_size, batch_first=True)
         self.fc = nn.Linear(in_features=hidden_size, out_features=output_size)
         self.sigmoid = nn.Sigmoid()
+        self.dropout = nn.Dropout(p=dropout)
 
     def forward(self, x):
         embedded_x = self.embedding(x)

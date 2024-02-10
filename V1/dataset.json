@@ -5,6 +5,10 @@
       "tags": ["wildlife"]
     },
     {
+      "text": "I want to see beaches",
+      "tags": ["beaches"]
+    },
+    {
       "text": "A wildlife sanctuary in the heart of Sri Lanka's natural beauty.",
       "tags": ["wildlife"]
     },
@@ -91,6 +95,46 @@
     {
       "text": "Suggest some locations which are great for camping",
       "tags": ["camping"]
+    },
+    {
+      "text": "beautiful wildlife here in sri lanka in mountain ranges",
+      "tags": ["mountains", "wildlife"]
+    },
+    {
+      "text": "Where can I see leopards in Sri Lanka",
+      "tags": ["wildlife", "leopards"]
+    },
+    {
+      "text": "I want to see elephants in Sri Lanka",
+      "tags": ["wildlife", "elephants"]
+    },
+    {
+      "text": "Beautiful majestic animals in Sri Lanka",
+      "tags": ["elephants"]
+    },
+    {
+      "text": "Are there tigers here in sri lanka?",
+      "tags": ["wildlife", "leopards"]
+    },
+    {
+      "text": "elephants",
+      "tags": ["elephants"]
+    },
+    {
+      "text": "leopards",
+      "tags": ["leopards"]
+    },
+    {
+      "text": "tigers",
+      "tags": ["leopards"]
+    },
+    {
+      "text": "Nestled in the heart of Sri Lanka, Ella captivates with its lush tea plantations, misty mountains, and cascading waterfalls. The iconic Nine Arch Bridge and Little Adam's Peak offer breathtaking vistas, making Ella a haven for nature lovers and seekers of serenity.",
+      "tags": ["mountains", "waterfalls", "ella"]
+    },
+    {
+      "text": "The pristine beaches of Mirissa are a haven for sun-seekers and surfers alike. The tranquil waters are perfect for swimming and snorkeling, while the golden sandy shores are ideal for sunbathing and beach volleyball. The nearby Mirissa Harbour offers exciting whale-watching excursions, where you can witness the majestic marine giants in their natural habitat.",
+      "tags": ["beaches", "whale-watching"]
     }
   ]
 }

@@ -1,5 +1,28 @@
 import json
 import numpy as np
+import nltk
+from nltk.stem import PorterStemmer
+from nltk.tokenize import word_tokenize
+from nltk.corpus import words
+
+stemer = PorterStemmer()
+
+
+def getallWords():
+    allWords = words.words()
+
+    try:
+        with open('V1/dataset.json') as file:
+            intents = json.load(file)
+            for intent in intents['intents']:
+                for word in word_tokenize(intent['text']):
+                    if word not in allWords:
+                        allWords.append(stemer.stem(word.lower()))
+    except Exception as e:
+        print("An Error Occured When reading Words: ", e)
+
+    return allWords
+
 
 def getallTags():
     tags = []
@@ -36,3 +59,5 @@ def getDataset():
         print("An Error Occured When reading Dataset: ", e)
 
     return dataset
+
+

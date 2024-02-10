@@ -4,7 +4,7 @@ from RuuGPTV1 import RuuGPTV1
 from NLPEngineV1 import getVocabSize, sentenceToIds
 from config import tags
 
-modeldata = torch.load('V1/models/model5.pth')
+modeldata = torch.load('V1/models/model6.pth')
 
 vocab_size = modeldata['vocab_size']
 embedding_dim = modeldata['embedding_dim']
@@ -23,6 +23,8 @@ model.eval()
 with torch.no_grad():
     while True:
         sentence = input("You: ")
+        if sentence == "quit" or sentence =="q":
+            break
         wordIndices = torch.tensor(sentenceToIds(sentence),dtype=torch.int32).reshape(1,-1)
         output = model(wordIndices)
         probs = torch.sigmoid(output)
@@ -31,5 +33,5 @@ with torch.no_grad():
             print("No tag found!")
         for idnx,prob in enumerate(probs[0]):
             if prob > 0.7:
-                print(tags[idnx])
+                print(tags[idnx], ":", prob)
         print("")
