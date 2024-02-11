@@ -32,6 +32,6 @@ with torch.no_grad():
         if(probs[0].max() < 0.7):
             print("No tag found!")
         for idnx,prob in enumerate(probs[0]):
-            if prob > 0.7:
-                print(tags[idnx], ":", prob)
+            #if prob > 0.7:
+            print(tags[idnx], ":", prob)
         print("")
