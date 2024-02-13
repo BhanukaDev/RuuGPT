@@ -7,20 +7,34 @@ from nltk.corpus import words
 
 stemer = PorterStemmer()
 
-
 def getallWords():
+    allWords = []
+    try:
+        with open("V1/allWords.json") as file:
+            allWords = json.load(file)
+    except Exception as e:
+        print("An Error Occured When reading Words: ", e)
+        allWords = writeallWords()
+    return allWords
+
+def writeallWords():
     allWords = words.words()
+    allWords = [stemer.stem(word.lower()) for word in allWords]
+    allWords = list(set(allWords))
 
     try:
         with open('V1/dataset.json') as file:
             intents = json.load(file)
             for intent in intents['intents']:
                 for word in word_tokenize(intent['text']):
+                    word = stemer.stem(word.lower())
                     if word not in allWords:
-                        allWords.append(stemer.stem(word.lower()))
+                        allWords.append(word)
     except Exception as e:
         print("An Error Occured When reading Words: ", e)
-
+    # I want to save this allWords to a file. so don't have run aboive code all time.
+    with open('V1/allWords.json', 'w') as file:
+        json.dump(allWords, file)
     return allWords
 
 
@@ -59,5 +73,4 @@ def getDataset():
         print("An Error Occured When reading Dataset: ", e)
 
     return dataset
-
 

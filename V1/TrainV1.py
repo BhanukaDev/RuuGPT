@@ -4,11 +4,11 @@ import torch.optim as optim
 import numpy as np
 
 from RuuGPTV1 import RuuGPTV1
-from NLPEngineV1 import sentenceToIds,getVocabSize
+from NLPEngineV1 import encodeSentence,getVocabSize
 from config import getDataset,tags
 
 vocab_size = getVocabSize()
-embedding_dim = 50
+embedding_dim = 100
 
 hidden_size = 18
 output_size = len(tags)
@@ -20,25 +20,25 @@ modelPath = input("Enter model path: ")
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
+
 # check whether model with such path exists
 try:
     modeldata = torch.load(modelPath)
     print(f"Loading model from {modelPath}")
-    model = RuuGPTV1(modeldata['vocab_size'],modeldata['embedding_dim'],modeldata['hidden_size'],modeldata['output_size'],modeldata['dropout'])
+    model = RuuGPTV1(vocab_size,embedding_dim,modeldata['hidden_size'],modeldata['output_size'],modeldata['dropout'])
     model.load_state_dict(modeldata['state_dict'])
+
     op = input("Make new version of the model? (y/any): ")
     if op == 'y':
         modelPath = input("Enter new model path: ")
-    
-    if (modeldata["output_size"] != output_size):
-        model.fc = nn.Linear(in_features=hidden_size, out_features=len(tags))
 
-    if (modeldata["vocab_size"] != vocab_size):
-        model.embedding = nn.Embedding(num_embeddings=vocab_size, embedding_dim=modeldata['embedding_dim'])
+    model.embedding = nn.Embedding(num_embeddings=vocab_size, embedding_dim=modeldata['embedding_dim'])    
+    model.fc = nn.Linear(in_features=modeldata['hidden_size'], out_features=len(tags))
 
 except Exception as e:
     print(f"Creating new model at {modelPath}. because an error occured:", e)
     model = RuuGPTV1(vocab_size,embedding_dim,hidden_size,output_size,dropout)
+
 
 model.to(device)
 
@@ -55,7 +55,7 @@ dataset = getDataset()
 
 for epoch in range(numEpochs):
     for sentence, tagsPosArray in dataset:
-        wordIndices = torch.tensor(sentenceToIds(sentence),dtype=torch.int32).reshape(1,-1)
+        wordIndices = torch.tensor(encodeSentence(sentence),dtype=torch.int32).reshape(1,-1)
         wordIndices = wordIndices.to(device)
         output = model(wordIndices)
 

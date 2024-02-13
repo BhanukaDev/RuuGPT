@@ -27,7 +27,7 @@ def encode(word):
 def decode(index):
     return allwords[index-1] if index > 0 else "Unknown"
 
-def sentenceToIds(sentence):
+def encodeSentence(sentence):
     tokens = tokenise(sentence)
     tokens = remove_stopwords(tokens)
     tokens = stem(tokens)
@@ -36,4 +36,5 @@ def sentenceToIds(sentence):
     return ids
 
 def getVocabSize():
-    return len(allwords)
+    return len(allwords)+1
+
