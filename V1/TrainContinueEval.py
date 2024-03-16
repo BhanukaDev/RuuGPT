@@ -22,8 +22,6 @@ newModelPath = input("Enter new model path: ") # New model path
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-#model = RuuGPTV1(vocab_size,embedding_dim,hidden_size,output_size,dropout)
-
 checkpoint = torch.load(modelPath)
 model = RuuGPTV1(checkpoint['vocab_size'],checkpoint['embedding_dim'],checkpoint['hidden_size'],checkpoint['output_size'],checkpoint['dropout'])
 model.load_state_dict(checkpoint['state_dict'])
