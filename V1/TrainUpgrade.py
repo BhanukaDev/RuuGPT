@@ -7,7 +7,7 @@ from RuuGPTV1 import RuuGPTV1
 from NLPEngineV1 import encodeSentence, getVocabSize
 from config import getDataset, tags
 
-numEpochs = 50
+numEpochs = 10
 
 modelPath = input("Enter model path: ")  # Old model path
 newModelPath = input("Enter new model path: ")  # New model path
@@ -29,7 +29,7 @@ hidden_size = checkpoint['hidden_size']
 output_size = checkpoint['output_size']
 dropout = checkpoint['dropout']
 
-print("Output size changed", getVocabSize(), checkpoint['vocab_size'], output_size, len(tags))
+print(getVocabSize(), checkpoint['vocab_size'], output_size, len(tags))
 
 if vocab_size != getVocabSize():
     vocab_size = getVocabSize()

@@ -14,7 +14,9 @@ hidden_size = 18
 output_size = len(tags)
 dropout = 0.5
 
-numEpochs = 50
+numEpochs = 500
+
+
 
 modelPath = input("Enter model path: ") # Old model path
 modelPath = "V1/models/" + modelPath
@@ -25,7 +27,8 @@ newModelPath = input("Enter new model path: ") # New model path
 newModelPath = "V1/models/" + newModelPath
 if not newModelPath.endswith(".pth"):
     newModelPath += ".pth"
-
+    
+numEpochs = int(input("Enter number of epochs: ")) # Number of epochs
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
