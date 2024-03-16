@@ -40,11 +40,11 @@ with torch.no_grad():
         print("Related Tags: ")
         # if(probs[0].max() < 0.6):
         #     print("No tag found!")
-      #  for idnx,prob in enumerate(probs[0]):
+        for idnx,prob in enumerate(probs[0]):
             #if prob > 0.6:
-         #   results.append((tags[idnx],prob.item()))
-       # results.sort(key=lambda x: x[1],reverse=True)
+           results.append((tags[idnx],prob.item()))
+        results.sort(key=lambda x: x[1],reverse=True)
 
         for tag,prob in results:
             print(f"{tag}: {prob*100:.2f}%")
-        print("")
+            print("")

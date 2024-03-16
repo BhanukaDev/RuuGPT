@@ -48,6 +48,8 @@ def getallTags():
                 for tag in intent['tags']:
                     if tag.lower() not in tags:
                         tags.append(tag.lower())
+        for tag in tags:
+            print(tag)
 
     except Exception as e:
         print("An Error Occured When reading Tags: ", e)
