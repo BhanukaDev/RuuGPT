@@ -17,7 +17,14 @@ dropout = 0.5
 numEpochs = 50
 
 modelPath = input("Enter model path: ") # Old model path
+modelPath = "V1/models/" + modelPath
+if not modelPath.endswith(".pth"):
+    modelPath += ".pth"
+
 newModelPath = input("Enter new model path: ") # New model path
+newModelPath = "V1/models/" + newModelPath
+if not newModelPath.endswith(".pth"):
+    newModelPath += ".pth"
 
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")

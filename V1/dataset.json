@@ -1,6 +1,143 @@
 {
   "intents": [
     {
+      "text": "Enjoy a serene camping experience amidst the lush mountains of Nuwara Eliya, Sri Lanka.",
+      "tags": ["camping", "mountains", "nuwara"]
+    },
+    {
+      "text": "Explore the urban jungles of Colombo, where vibrant street food stalls and bustling markets await.",
+      "tags": ["urban", "street-food"]
+    },
+    {
+      "text": "Embark on a thrilling fishing expedition in the tranquil waters of Sri Lanka's rural villages.",
+      "tags": ["fishing", "rural"]
+    },
+    {
+      "text": "Unwind in nature with a peaceful hiking adventure through the tropical rainforests of Sinharaja.",
+      "tags": ["hiking", "tropical", "sinhala"]
+    },
+    {
+      "text": "Immerse yourself in the rich Buddhist heritage of Anuradhapura, home to ancient temples and sacred relics.",
+      "tags": ["buddhist", "ancient"]
+    },
+    {
+      "text": "Discover the Islamic influence in Sri Lanka with a visit to the historic mosques of Galle and Colombo.",
+      "tags": ["islam", "galle", "urban"]
+    },
+    {
+      "text": "Witness the majestic leopards roam freely in Yala National Park, a haven for wildlife enthusiasts.",
+      "tags": ["wildlife", "leopards"]
+    },
+    {
+      "text": "Dive into the crystal-clear waters of Hikkaduwa and explore vibrant coral reefs teeming with marine life.",
+      "tags": ["diving", "sea"]
+    },
+    {
+      "text": "Embark on an exhilarating cycling tour through the scenic countryside of Sigiriya, dotted with ancient ruins and lush landscapes.",
+      "tags": ["cycling", "ruins", "scenic"]
+    },
+    {
+      "text": "Witness the awe-inspiring sight of sea turtles nesting along the sandy shores of Kosgoda Beach.",
+      "tags": ["sea-turtles", "beaches"]
+    },
+    {
+      "text": "Feel the adrenaline rush as you speed across the azure waters on a jet ski adventure in Bentota.",
+      "tags": ["jet-skis", "sea"]
+    },
+    {
+      "text": "Indulge in the vibrant nightlife scene of Colombo, with its eclectic mix of pubs and clubs.",
+      "tags": ["pubs", "urban", "nightlife"]
+    },
+    {
+      "text": "Embark on a scenic boat ride along the tranquil waters of Kandy Lake, surrounded by lush greenery.",
+      "tags": ["boatriding", "scenic"]
+    },
+    {
+      "text": "Experience the authentic taste of Sri Lanka with a sip of kasippu pot, a traditional alcoholic beverage.",
+      "tags": ["kasippu pot", "native", "street-food"]
+    },
+    {
+      "text": "Explore the picturesque waterfalls of Ramboda and immerse yourself in the natural beauty of Sri Lanka.",
+      "tags": ["waterfall", "scenic"]
+    },
+    {
+      "text": "Witness the spectacular annual migration of birds at the wetlands of Bundala National Park.",
+      "tags": ["migration", "wildlife", "wetlands"]
+    },
+    {
+      "text": "Discover the rich cultural heritage of Jaffna with its vibrant Tamil festivals and ancient Hindu temples.",
+      "tags": ["jaffna", "tamil", "hindu", "ancient"]
+    },
+    {
+      "text": "Embark on a scenic train journey through the rural heartlands of Sri Lanka, passing by picturesque villages and verdant landscapes.",
+      "tags": ["trains", "rural", "scenic"]
+    },
+    {
+      "text": "Savor the exotic flavors of Sri Lankan street food as you embark on a culinary crawl through the bustling markets of Colombo.",
+      "tags": ["street-food", "urban"]
+    },
+    {
+      "text": "Explore the ancient ruins of Polonnaruwa and delve into Sri Lanka's rich history and heritage.",
+      "tags": ["ruins", "ancient"]
+    },
+    {
+      "text": "Experience the thrill of off-road racing through the rugged terrain of Knuckles Mountain Range.",
+      "tags": ["off-road", "mountains", "racing"]
+    },
+    {
+      "text": "Witness the stunning sunset over the tranquil waters of Unawatuna Bay, a perfect end to a day of adventure.",
+      "tags": ["sun-set", "sea", "scenic"]
+    },
+    {
+      "text": "Discover the calm serenity of the mangrove swamps in Negombo, home to diverse wildlife and tranquil waterways.",
+      "tags": ["calm", "swamp", "wildlife"]
+    },
+    {
+      "text": "Soar through the treetops on an exhilarating zipline adventure in the lush jungles of Kitulgala.",
+      "tags": ["zipline", "jungles"]
+    },
+    {
+      "text": "Experience the thrill of paragliding over the scenic landscapes of Ella, with panoramic views of lush tea plantations and misty mountains.",
+      "tags": ["paragliding", "scenic", "ella"]
+    },
+    {
+      "text": "Relax and unwind at a luxurious beach resort in Mirissa, with pristine beaches and stunning ocean views.",
+      "tags": ["resort", "beaches"]
+    },
+    {
+      "text": "Party the night away at the vibrant beach bars of Unawatuna, with live music and cocktails by the sea.",
+      "tags": ["party", "beaches", "nightlife"]
+    },
+    {
+      "text": "Get up close and personal with Sri Lanka's majestic elephants at the Udawalawe National Park.",
+      "tags": ["elephants", "wildlife"]
+    },
+    {
+      "text": "Explore the ancient ruins of Anuradhapura and uncover the fascinating history of Sri Lanka's first capital.",
+      "tags": ["ruins", "ancient"]
+    },
+    {
+      "text": "Witness the breathtaking sunrise from the summit of Adam's Peak, a sacred pilgrimage site revered by Buddhists, Hindus, and Muslims alike.",
+      "tags": ["sun-rise", "religious", "buddhist", "hindu", "muslim"]
+    },
+    {
+      "text": "Cool off with a refreshing swim in the crystal-clear waters of a secluded lagoon in Trincomalee.",
+      "tags": ["swimming", "lagoon"]
+    },
+    {
+      "text": "Embark on a thrilling safari adventure in the untamed wilderness of Yala National Park, home to diverse wildlife including leopards, elephants, and sloth bears.",
+      "tags": ["safari", "wildlife"]
+    },
+    {
+      "text": "Indulge in a culinary journey through Sri Lanka's diverse cuisine at the finest restaurants in Colombo.",
+      "tags": ["restaurants", "urban", "food"]
+    },
+
+    {
+      "text": "Explore the urban jungles of Colombo, where vibrant street food stalls and bustling markets await.",
+      "tags": ["urban"]
+    },
+    {
       "text": "I want to explore the wildlife in Sri Lanka.",
       "tags": ["wildlife"]
     },
@@ -159,6 +296,90 @@
     {
       "text": "Beautiful water falling from the mountains",
       "tags": ["waterfalls", "mountains"]
+    },
+    {
+      "text": "I like to hike in the mountains",
+      "tags": ["mountains", "hiking"]
+    },
+    {
+      "text": "Experience the tranquility of camping under the stars surrounded by lush greenery and cascading waterfalls in Nuwara Eliya.",
+      "tags": ["nuwara", "camping", "waterfall"]
+    },
+    {
+      "text": "Embark on an adventurous hike through the rugged terrain of Horton Plains National Park, spotting rare wildlife along the way.",
+      "tags": ["hiking", "wildlife"]
+    },
+    {
+      "text": "Explore the ancient ruins of Anuradhapura, immersing yourself in the rich history and culture of Sri Lanka.",
+      "tags": ["ruins", "ancient"]
+    },
+    {
+      "text": "Indulge in delicious street food delicacies while strolling through the bustling markets of Colombo.",
+      "tags": ["Street-food"]
+    },
+    {
+      "text": "Witness the breathtaking sight of majestic whales gracefully gliding through the azure waters off the coast of Mirissa.",
+      "tags": ["whale-watching", "sea"]
+    },
+    {
+      "text": "Immerse yourself in the vibrant atmosphere of Galle Fort, exploring its quaint streets and historic landmarks.",
+      "tags": ["galle", "historical"]
+    },
+    {
+      "text": "Get your adrenaline pumping with an exhilarating jet ski ride across the crystal-clear waters of Bentota Beach.",
+      "tags": ["jet-skis", "beaches"]
+    },
+    {
+      "text": "Discover the hidden treasures of Jaffna, from its bustling markets to its ancient Hindu temples.",
+      "tags": ["jaffna", "hindu"]
+    },
+    {
+      "text": "Embark on a thrilling safari adventure in Yala National Park, where you can spot elusive leopards and majestic elephants.",
+      "tags": ["safari", "wildlife"]
+    },
+    {
+      "text": "Unwind in luxury at a tropical resort nestled amidst swaying palm trees and overlooking pristine beaches.",
+      "tags": ["resort", "beaches"]
+    },
+    {
+      "text": "Join a guided cycling tour through the picturesque countryside, immersing yourself in the rural charm of Sri Lanka.",
+      "tags": ["cycling", "rural"]
+    },
+    {
+      "text": "Experience the serenity of a sunrise meditation session at a tranquil Buddhist temple nestled in the heart of the mountains.",
+      "tags": ["sun-rise", "buddhist", "mountains"]
+    },
+    {
+      "text": "Savor the flavors of traditional Sri Lankan cuisine at authentic restaurants, where you can sample spicy curries and fragrant rice dishes.",
+      "tags": ["restaurants", "sinhala"]
+    },
+    {
+      "text": "Embark on a thrilling whitewater rafting adventure down the rushing rapids of the Kelani River, surrounded by lush tropical scenery.",
+      "tags": ["rafting", "tropical"]
+    },
+    {
+      "text": "Explore the vibrant coral reefs and encounter colorful marine life while snorkeling in the crystal-clear waters of Hikkaduwa.",
+      "tags": ["snorkelling", "sea"]
+    },
+    {
+      "text": "Discover the rich cultural heritage of Sri Lanka with a visit to the ancient temples of Polonnaruwa, marveling at intricate stone carvings and towering stupas.",
+      "tags": ["ancient", "religious"]
+    },
+    {
+      "text": "Enjoy an evening of relaxation and camaraderie at lively beachfront pubs, where you can sip on refreshing cocktails and enjoy live music.",
+      "tags": ["pubs", "beaches"]
+    },
+    {
+      "text": "Embark on a thrilling zipline adventure through the lush rainforest canopy, taking in breathtaking views of cascading waterfalls and verdant landscapes.",
+      "tags": ["zipline", "waterfall"]
+    },
+    {
+      "text": "Marvel at the spectacular sight of hundreds of migratory birds flocking to the tranquil wetlands of Bundala National Park.",
+      "tags": ["migration", "wetlands"]
+    },
+    {
+      "text": "Witness the awe-inspiring beauty of a tropical sunset as the sky is painted in shades of orange and pink over the calm waters of a lagoon.",
+      "tags": ["sun-set", "tropical", "lagoon"]
     }
   ]
 }

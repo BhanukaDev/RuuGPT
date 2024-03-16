@@ -4,7 +4,7 @@ from RuuGPTV1 import RuuGPTV1
 from NLPEngineV1 import getVocabSize, encodeSentence
 from config import tags
 
-modeldata = torch.load('testm2.pth')
+modeldata = torch.load('V1/models/model12.pth')
 
 vocab_size = modeldata['vocab_size']
 embedding_dim = modeldata['embedding_dim']
@@ -29,9 +29,9 @@ with torch.no_grad():
         output = model(wordIndices)
         probs = torch.sigmoid(output)
         print("Related Tags: ")
-        if(probs[0].max() < 0.7):
+        if(probs[0].max() < 0.6):
             print("No tag found!")
         for idnx,prob in enumerate(probs[0]):
-            if prob > 0.7:
+            if prob > 0.6:
                 print(tags[idnx], ":", prob)
         print("")
