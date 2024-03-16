@@ -1,7 +1,8 @@
+import sys
 import torch
 import torch.nn as nn
 import torch.optim as optim
-import numpy as np
+import numpy as np 
 
 from RuuGPTV1 import RuuGPTV1
 from NLPEngineV1 import encodeSentence,getVocabSize
@@ -10,6 +11,8 @@ from config import getDataset,tags
 vocab_size = getVocabSize()
 embedding_dim = 100
 
+print(tags)
+sys.exit(0)
 hidden_size = 18
 output_size = len(tags)
 dropout = 0.5

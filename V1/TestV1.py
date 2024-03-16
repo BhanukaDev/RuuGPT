@@ -4,7 +4,7 @@ from RuuGPTV1 import RuuGPTV1
 from NLPEngineV1 import getVocabSize, encodeSentence
 from config import tags
 
-modeldata = torch.load('V1/models/model8.pth')
+modeldata = torch.load('testm2.pth')
 
 vocab_size = modeldata['vocab_size']
 embedding_dim = modeldata['embedding_dim']
