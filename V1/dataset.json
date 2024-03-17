@@ -1,6 +1,57 @@
 {
   "intents": [
     {
+      "text": "I want go somewhere crowded",
+      "tags": ["urban", "party"]
+    },
+    {
+      "text": "I want to go on an adventure",
+      "tags": [
+        "hiking",
+        "snorkelling",
+        "boatriding",
+        "paragliding",
+        "whale-watching",
+        "safari",
+        "camping",
+        "diving",
+        "jet-skis",
+        "rafting"
+      ]
+    },
+    {
+      "text": "I would like to have a beer right now",
+      "tags": ["pubs", "party"]
+    },
+    {
+      "text": "I want to drink beer",
+      "tags": ["pubs", "party"]
+    },
+    {
+      "text": "beer",
+      "tags": ["pubs", "party"]
+    },
+    {
+      "text": "I would like to go out and have a beer right now",
+      "tags": ["pubs", "party"]
+    },
+    {
+      "text": "I am hungry",
+      "tags": ["restaurants", "food", "street-food"]
+    },
+    {
+      "text": "I want to go surfing",
+      "tags": ["surfing", "beach"]
+    },
+    {
+      "text": "buddhist temples",
+      "tags": ["buddhist"]
+    },
+    {
+      "text": "I would love a place which is always covered with mist",
+      "tags": ["mountains", "ella", "jungles", "nuwara"]
+    },
+    {
       "text": "I would like to go for a walk in a hill with relaxing and scenice views",
       "tags": ["mountains", "calm", "scenic", "natural", "hiking"]
     },
