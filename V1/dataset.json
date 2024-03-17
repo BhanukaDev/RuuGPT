@@ -1,6 +1,16 @@
 {
   "intents": [
     {
+      "text": "I would like to go for a walk in a hill with relaxing and scenice views",
+      "tags": ["mountains", "calm", "scenic", "natural", "hiking"]
+    },
+
+    {
+      "text": "Suggest me a calming environment to go for a camping which is more scenic",
+      "tags": ["camping", "calm", "scenic"]
+    },
+
+    {
       "text": "Enjoy a serene camping experience amidst the lush mountains of Nuwara Eliya, Sri Lanka.",
       "tags": ["camping", "mountains", "nuwara"]
     },
