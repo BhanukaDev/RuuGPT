@@ -46,10 +46,9 @@ def getallTags():
             intents = json.load(json_file)
             for intent in intents['intents']:
                 for tag in intent['tags']:
+                    print(tag)
                     if tag.lower() not in tags:
                         tags.append(tag.lower())
-        for tag in tags:
-            print(tag)
 
     except Exception as e:
         print("An Error Occured When reading Tags: ", e)

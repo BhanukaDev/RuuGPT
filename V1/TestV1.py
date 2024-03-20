@@ -50,6 +50,6 @@ with torch.no_grad():
            results.append((tags[idnx],prob.item()))
         results.sort(key=lambda x: x[1],reverse=True)
 
-        for tag,prob in results:
+        for tag,prob in results[:5]:
             print(f"{tag}: {prob*100:.2f}%")
             print("")
