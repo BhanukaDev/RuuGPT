@@ -43,7 +43,7 @@ model.load_state_dict(checkpoint["state_dict"])
 
 model.to(device)
 
-criterion = nn.BCELoss()
+criterion = nn.BCEWithLogitsLoss()
 optimizer = optim.Adam(model.parameters(), lr=0.001)
 
 dataset = getDataset()
