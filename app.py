@@ -2,7 +2,7 @@ from flask import Flask, request, jsonify
 from firestore_db import db
 from tags import generate_tags
 import torch
-from RuuGPTV1 import RuuGPTV1
+from V1.RuuGPTV1 import RuuGPTV1
 
 
 app = Flask(__name__)

@@ -6,7 +6,7 @@ from V1.config import *
 
 # Initialize model 
 def init_model():
-    modelPath = 'V1/models/model16.pth'  
+    modelPath = 'V1/models/latestmodel.pth'  
     modeldata = torch.load(modelPath)
 
     model = RuuGPTV1(modeldata['vocab_size'], modeldata['embedding_dim'],
