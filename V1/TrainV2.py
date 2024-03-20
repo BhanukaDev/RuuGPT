@@ -7,6 +7,11 @@ from RuuGPTV1 import RuuGPTV1
 from NLPEngineV1 import encodeSentence, getVocabSize
 from config import getDataset, tags
 
+import time
+
+startTime = time.time()
+
+
 vocab_size = getVocabSize()
 embedding_dim = 50
 
@@ -57,3 +62,9 @@ data = {
 }
 
 torch.save(data, modelPath)
+
+endTime = time.time()
+
+print("Training complete!")
+print("Model saved at", newModelPath)
+print(f"Time taken: {endTime - startTime:.2f} seconds")
