@@ -1,19 +1,32 @@
 import torch
+
 from RuuGPTV1 import RuuGPTV1
 from NLPEngineV1 import encodeSentence
 
-if __name__ == "__main__":
-    # Load model data
-    mdata = torch.load("V1/models/model6.pth")
+import torch.onnx
 
-    # Create and load the model
-    model = RuuGPTV1(mdata['vocab_size'], mdata['embedding_dim'], mdata['hidden_size'], mdata['output_size'], mdata['dropout'])
-    model.load_state_dict(mdata['state_dict'])
-    model.eval()
+mdata = torch.load("V1/models/model17.pth")
 
-    # Prepare input data
-    sentence = "Hello"
-    wordIndices = torch.tensor(encodeSentence(sentence), dtype=torch.int32).reshape(1, -1)
+# Create and load the model
+model = RuuGPTV1(
+    mdata["vocab_size"],
+    mdata["embedding_dim"],
+    mdata["hidden_size"],
+    mdata["output_size"],
+    mdata["dropout"],
+)
 
-    # Set the sequence length explicitly during export
-    torch.onnx.export(model, wordIndices, "V1/onnxs/model6.onnx", input_names=["input"], output_names=["output"], dynamic_axes={"input": {0: "batch_size", 1: "sequence_length"}})
+# Set the model to evaluation mode
+model.eval()
+
+# Create a dummy input tensor with a correct shape (batch_size=1)
+sentence = "Hello"
+dummy_input = torch.tensor(encodeSentence(sentence), dtype=torch.int32).reshape(1, -1)
+
+# Export the model to ONNX format
+output_file = "V1/onnxs/model17.onnx"
+input_names = ["input_sequence"]
+output_names = ["output_probs"]
+torch.onnx.export(
+    model, dummy_input, output_file, input_names=input_names, output_names=output_names
+)

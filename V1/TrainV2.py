@@ -4,8 +4,8 @@ import torch.optim as optim
 import numpy as np
 
 from RuuGPTV1 import RuuGPTV1
-from NLPEngineV1 import encodeSentence,getVocabSize
-from config import getDataset,tags
+from NLPEngineV1 import encodeSentence, getVocabSize
+from config import getDataset, tags
 
 vocab_size = getVocabSize()
 embedding_dim = 50
@@ -20,40 +20,40 @@ modelPath = input("Enter model path: ")
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-model = RuuGPTV1(vocab_size,embedding_dim,hidden_size,output_size,dropout)
+model = RuuGPTV1(vocab_size, embedding_dim, hidden_size, output_size, dropout)
 
 model.to(device)
 
-criterion = nn.BCELoss()
+criterion = nn.BCEWithLogitsLoss()
 optimizer = optim.Adam(model.parameters(), lr=0.001)
 
 dataset = getDataset()
 
 for epoch in range(numEpochs):
     for sentence, tagsPosArray in dataset:
-        wordIndices = torch.tensor(encodeSentence(sentence),dtype=torch.int32).reshape(1,-1)
+        wordIndices = torch.tensor(encodeSentence(sentence), dtype=torch.int32).reshape(
+            1, -1
+        )
         wordIndices = wordIndices.to(device)
         output = model(wordIndices)
 
         tagsPosArray = np.array(tagsPosArray)
         tagsPosTensor = torch.tensor(tagsPosArray, dtype=torch.float32).reshape(1, -1)
         tagsPosTensor = tagsPosTensor.to(device)
-        
 
         loss = criterion(output, tagsPosTensor)
         optimizer.zero_grad()
         loss.backward()
         optimizer.step()
-    print(f'Epoch [{epoch+1}/{numEpochs}], Loss: {loss.item()*100:.4f}%')
+    print(f"Epoch [{epoch+1}/{numEpochs}], Loss: {loss.item()*100:.4f}%")
 
-data ={
-    "vocab_size":vocab_size,
-    "embedding_dim":embedding_dim,
-    "hidden_size":hidden_size,
-    "output_size":output_size,
-    "dropout":dropout,
-    "state_dict":model.state_dict()
-    
+data = {
+    "vocab_size": vocab_size,
+    "embedding_dim": embedding_dim,
+    "hidden_size": hidden_size,
+    "output_size": output_size,
+    "dropout": dropout,
+    "state_dict": model.state_dict(),
 }
 
 torch.save(data, modelPath)
