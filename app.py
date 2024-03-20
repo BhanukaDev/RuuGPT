@@ -1,8 +1,10 @@
 from flask import Flask, request, jsonify
+from NLPEngineV1 import encodeSentence
 from firestore_db import db
 from tags import generate_tags
 import torch
 from V1.RuuGPTV1 import RuuGPTV1
+from V1.config import tags
 
 
 app = Flask(__name__)
@@ -32,6 +34,23 @@ def handle_generate_tags():
     # Ensure a sentence was provided
     if not sentence:
         return jsonify({"error": "No sentence provided"}), 400
+
+    # Bhanuka's code (Duvin, Here I will return list of tags, use it for query!)
+    result_tags = []
+
+    with torch.no_grad():
+        wordIndices = wordIndices = torch.tensor(
+            encodeSentence(sentence), dtype=torch.int32
+        ).reshape(1, -1)
+
+        output = model(wordIndices)
+        probs = torch.sigmoid(output)
+
+        for index, prob in enumerate(probs[0]):
+            result_tags.append(tags[index], prob.item())
+        result_tags.sort(key=lambda x: x[1], reverse=True)
+
+    # Bhanuka's code end
 
     # Generate tags with probabilities above 60%
     tag_results = generate_tags(sentence, threshold=0.6)
