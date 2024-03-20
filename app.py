@@ -1,9 +1,27 @@
 from flask import Flask, request, jsonify
 from firestore_db import db
 from tags import generate_tags
+import torch
+from RuuGPTV1 import RuuGPTV1
 
 
 app = Flask(__name__)
+
+
+# Load the latest model
+modeldata = torch.load("V1/models/latestmodel.pth")
+
+vocab_size = modeldata["vocab_size"]
+embedding_dim = modeldata["embedding_dim"]
+
+hidden_size = modeldata["hidden_size"]
+output_size = modeldata["output_size"]
+dropout = modeldata["dropout"]
+
+model = RuuGPTV1(vocab_size, embedding_dim, hidden_size, output_size, dropout)
+
+model.load_state_dict(modeldata["state_dict"])
+model.eval()
 
 
 @app.route("/generate_tags", methods=["POST"])
