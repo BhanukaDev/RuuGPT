@@ -1,0 +1,27 @@
+name: Deploy Flask App to EC2
+
+on:
+  push:
+    branches:
+      - main  # Adjust to your deployment branch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Set up SSH for deployment
+      env:
+        SSH_KEY: ${{ secrets.SSH_KEY }}
+      run: |
+        mkdir -p ~/.ssh
+        echo "${{ secrets.SSH_KEY }}" | base64 --decode > ~/.ssh/id_rsa
+        chmod 600 ~/.ssh/id_rsa
+        ssh-keyscan ${{ secrets.HOST }} >> ~/.ssh/known_hosts
+
+    - name: Deploy to EC2
+      env:
+        HOST: ${{ secrets.HOST }}
+      run: ssh -o "StrictHostKeyChecking=no" -i ~/.ssh/id_rsa ubuntu@${{ secrets.HOST }} 'bash -s' < deploy.sh

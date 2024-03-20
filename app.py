@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify
-from NLPEngineV1 import encodeSentence
+from V1.NLPEngineV1 import encodeSentence
 from firestore_db import db
 from tags import generate_tags
 import torch
