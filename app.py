@@ -11,7 +11,7 @@ app = Flask(__name__)
 
 
 # Load the latest model
-modeldata = torch.load("V1/models/latestmodel.pth")
+modeldata = torch.load("V1/models/model16.pth")
 
 vocab_size = modeldata["vocab_size"]
 embedding_dim = modeldata["embedding_dim"]
