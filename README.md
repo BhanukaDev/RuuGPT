@@ -1,2 +1,2 @@
 # RuuGPT
- Custom GPT called Ruu. just to test the technology
+An AI to recommend traveeling spots.
