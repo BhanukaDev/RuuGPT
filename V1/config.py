@@ -4,6 +4,7 @@ import nltk
 from nltk.stem import PorterStemmer
 from nltk.tokenize import word_tokenize
 from nltk.corpus import words
+import torch
 
 stemer = PorterStemmer()
 
@@ -20,21 +21,9 @@ def getallWords():
 
 
 def writeallWords():
-    allWords = words.words()
-    allWords = [stemer.stem(word.lower()) for word in allWords]
-    allWords = list(set(allWords))
-
-    try:
-        with open("V1/dataset.json") as file:
-            intents = json.load(file)
-            for intent in intents["intents"]:
-                for word in word_tokenize(intent["text"]):
-                    word = stemer.stem(word.lower())
-                    if word not in allWords:
-                        allWords.append(word)
-    except Exception as e:
-        p  # rint("An Error Occured When reading Words: ", e)
-    # I want to save this allWords to a file. so don't have run aboive code all time.
+    allWords = []
+    modelInfo = torch.load("V1/models/model22.pth")
+    allWords = modelInfo["allwords"]
     with open("V1/allWords.json", "w") as file:
         json.dump(allWords, file)
     return allWords
