@@ -4,3 +4,4 @@ torch==1.7.1
 nltk==3.5
 numpy==1.19.5
 onnxruntime==1.8.0
+flask-cors-4.0.0

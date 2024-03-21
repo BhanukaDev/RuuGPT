@@ -6,8 +6,10 @@ import torch
 from V1.RuuGPTV1 import RuuGPTV1
 from V1.config import tags
 
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 
 
 # Load the latest model
