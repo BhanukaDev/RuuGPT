@@ -6,8 +6,8 @@ from nltk.corpus import words
 import string
 from config import getallWords
 
-# "nltk.download('stopwords')"
-# nltk.download('punkt')
+nltk.download("stopwords")
+nltk.download("punkt")
 
 stopwords = stopwords.words("english") + list(string.punctuation)
 allwords = getallWords()

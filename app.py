@@ -1,7 +1,6 @@
 from flask import Flask, request, jsonify
 from V1.NLPEngineV1 import encodeSentence
 from firestore_db import db
-from tags import generate_tags
 import torch
 from V1.RuuGPTV1 import RuuGPTV1
 from V1.config import tags
@@ -13,7 +12,7 @@ CORS(app)
 
 
 # Load the latest model
-modeldata = torch.load("V1/models/model16.pth")
+modeldata = torch.load("V1/models/model22.pth")
 
 vocab_size = modeldata["vocab_size"]
 embedding_dim = modeldata["embedding_dim"]
@@ -55,7 +54,7 @@ def handle_generate_tags():
     # Bhanuka's code end
 
     # Generate tags with probabilities above 60%
-    tag_results = generate_tags(sentence, threshold=0.6)
+    tag_results = result_tags[:5]
 
     # Extract just the tag names for querying Firestore
     query_tags = [tag for tag, _ in tag_results]
