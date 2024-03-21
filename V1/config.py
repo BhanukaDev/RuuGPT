@@ -14,7 +14,7 @@ def getallWords():
         with open("V1/allWords.json") as file:
             allWords = json.load(file)
     except Exception as e:
-        print("An Error Occured When reading Words: ", e)
+        # print("An Error Occured When reading Words: ", e)
         allWords = writeallWords()
     return allWords
 
@@ -33,7 +33,7 @@ def writeallWords():
                     if word not in allWords:
                         allWords.append(word)
     except Exception as e:
-        print("An Error Occured When reading Words: ", e)
+        p  # rint("An Error Occured When reading Words: ", e)
     # I want to save this allWords to a file. so don't have run aboive code all time.
     with open("V1/allWords.json", "w") as file:
         json.dump(allWords, file)
@@ -50,11 +50,10 @@ def getallTags():
                 for tag in intent["tags"]:
                     if tag.lower() not in tags:
                         tags.append(tag.lower())
-        for tag in tags:
-            print(tag)
 
     except Exception as e:
-        print("An Error Occured When reading Tags: ", e)
+        # print("An Error Occured When reading Tags: ", e)
+        pass
 
     return tags
 
@@ -77,6 +76,7 @@ def getDataset():
                 data = (intent["text"], np.array(tagsPosArray))
                 dataset.append(data)
     except Exception as e:
-        print("An Error Occured When reading Dataset: ", e)
+        # print("An Error Occured When reading Dataset: ", e)
+        pass
 
     return dataset
