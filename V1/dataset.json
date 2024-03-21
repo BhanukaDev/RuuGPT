@@ -790,7 +790,30 @@
     {
       "text":"As night falls, the resort comes alive with the sounds of laughter and music, creating an unforgettable atmosphere where guests can dance the night away under the stars after exhilarating days of diving and leopard spotting.",
       "tags":["party","resort","diving"]
+    },
+    {
+      "text":"Could you recommend a destination that combines ancient history, educational opportunities, and scenic beauty for my next trip?",
+      "tags":["ancient","educational","scenic"]
+    },
+    {
+      "text":"Can you suggest a place where I can enjoy calm surroundings, cycle through picturesque landscapes, and watch stunning sunsets?",
+      "tags":["calm","cycling","sun-set"]
+    },
+    {
+      "text":"Can you recommend a destination where I can experience wildlife, go camping, and enjoy hiking trails?",
+      "tags":["wildlife","camping","hiking"]
+    },
+    {
+      "text":"Could you suggest a rural, tropical location where I can witness a breathtaking sunrise?",
+      "tags":["tropical","rural","sun-rise"]
+    },
+    {
+      "text":"Can you recommend a place with beautiful beaches that are perfect for swimming and snorkeling?",
+      "tags": ["beaches", "swimming", "snorkelling"]
+    },
+    {
+      "text":"Do you know of a place where I can go fishing and also have the chance to see sea turtles?",
+      "tags":["fishing","sea-turtles"]
     }
-
   ]
 }
