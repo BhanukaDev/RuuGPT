@@ -16,7 +16,7 @@ embedding_dim = 50
 
 hidden_size = 18
 output_size = len(tags)
-dropout = 0.5
+dropout = 0.9
 
 numEpochs = 500
 
@@ -41,7 +41,7 @@ model = RuuGPTV1(
     checkpoint["embedding_dim"],
     checkpoint["hidden_size"],
     checkpoint["output_size"],
-    checkpoint["dropout"],
+    dropout,
 )
 model.load_state_dict(checkpoint["state_dict"])
 

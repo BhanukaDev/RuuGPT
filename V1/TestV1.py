@@ -25,7 +25,6 @@ model.load_state_dict(modeldata["state_dict"])
 
 model.eval()
 
-results = []
 
 # Finding duplicate tags
 for i in range(len(tags)):
@@ -37,6 +36,7 @@ for i in range(len(tags)):
 with torch.no_grad():
 
     while True:
+        results = []
         sentence = input("You: ")
         if sentence == "quit" or sentence == "q":
             break

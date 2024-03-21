@@ -513,8 +513,8 @@
       "tags": ["wildlife"]
     },
     {
-      "text": "bird,",
-      "tags": ["bird,"]
+      "text": "bird",
+      "tags": ["bird"]
     },
     {
       "text": "parachute",
@@ -669,151 +669,211 @@
       "tags": ["scenic"]
     },
     {
-      "text":"I travel tomorrow morning in lagoon area",
-      "tags":["lagoon","natural"]
+      "text": "I travel tomorrow morning in lagoon area",
+      "tags": ["lagoon", "natural"]
     },
     {
-      "text":"Standing on the rugged cliffs overlooking the vast expanse of the sea, one can't help but feel a sense of awe at the natural beauty unfolding before them.",
-      "tags":["scenic","natural","sea","sun-rise","sun-set"]
+      "text": "Standing on the rugged cliffs overlooking the vast expanse of the sea, one can't help but feel a sense of awe at the natural beauty unfolding before them.",
+      "tags": ["scenic", "natural", "sea", "sun-rise", "sun-set"]
     },
     {
-      "text":"As the sun sets over the horizon, casting a golden hue across the tranquil waters, the scene becomes a breathtaking panorama, perfect for capturing in photographs.",
-      "tags":["scenic","natural","sea","sun-rise","sun-set"]
+      "text": "As the sun sets over the horizon, casting a golden hue across the tranquil waters, the scene becomes a breathtaking panorama, perfect for capturing in photographs.",
+      "tags": ["scenic", "natural", "sea", "sun-rise", "sun-set"]
     },
     {
-      "text":"The gentle lapping of the waves against the shore provides a soothing soundtrack to accompany the mesmerizing sight of whales breaching in the distance.",
-      "tags":["scenic","sea","surfing","whale-watching","natural","boatriding"]
+      "text": "The gentle lapping of the waves against the shore provides a soothing soundtrack to accompany the mesmerizing sight of whales breaching in the distance.",
+      "tags": [
+        "scenic",
+        "sea",
+        "surfing",
+        "whale-watching",
+        "natural",
+        "boatriding"
+      ]
     },
     {
-      "text":"Whale watching enthusiasts gather eagerly aboard sturdy vessels, eagerly anticipating the chance to witness these majestic creatures in their natural habitat.",
-      "tags":["whale-watching","natural","educational","boatriding"]
+      "text": "Whale watching enthusiasts gather eagerly aboard sturdy vessels, eagerly anticipating the chance to witness these majestic creatures in their natural habitat.",
+      "tags": ["whale-watching", "natural", "educational", "boatriding"]
     },
     {
-      "text":"Against the backdrop of a crimson sunset, a pod of whales gracefully glides through the ocean, their sleek forms rising and falling with effortless grace.",
-      "tags":["sun-set","sea","surfing","whale-watching"]
+      "text": "Against the backdrop of a crimson sunset, a pod of whales gracefully glides through the ocean, their sleek forms rising and falling with effortless grace.",
+      "tags": ["sun-set", "sea", "surfing", "whale-watching"]
     },
     {
-      "text":"The rugged coastline, adorned with craggy cliffs and windswept trees, offers a picturesque setting for spotting whales as they migrate along their ancient pathways.",
-      "tags":["beaches","natural","whale-watching","surfing"]
+      "text": "The rugged coastline, adorned with craggy cliffs and windswept trees, offers a picturesque setting for spotting whales as they migrate along their ancient pathways.",
+      "tags": ["beaches", "natural", "whale-watching", "surfing"]
     },
     {
-      "text":"With binoculars in hand, visitors scan the horizon, eagerly searching for the telltale signs of spouts and breaches that signal the presence of these magnificent marine mammals.",
-      "tags":["whale-watching","sea"]
+      "text": "With binoculars in hand, visitors scan the horizon, eagerly searching for the telltale signs of spouts and breaches that signal the presence of these magnificent marine mammals.",
+      "tags": ["whale-watching", "sea"]
     },
     {
-      "text":"The sea breeze carries the salty tang of the ocean as it sweeps across the deck, adding to the sense of adventure and excitement that accompanies whale watching expeditions.",
-      "tags":["sea","whale-watching"]
+      "text": "The sea breeze carries the salty tang of the ocean as it sweeps across the deck, adding to the sense of adventure and excitement that accompanies whale watching expeditions.",
+      "tags": ["sea", "whale-watching"]
     },
     {
-      "text":"Against the backdrop of a dramatic seascape, a family of whales frolics in the waves, their playful antics a joy to behold for those lucky enough to witness them.",
-      "tags":["fishing","sea","whale-watching"]
+      "text": "Against the backdrop of a dramatic seascape, a family of whales frolics in the waves, their playful antics a joy to behold for those lucky enough to witness them.",
+      "tags": ["fishing", "sea", "whale-watching"]
     },
     {
-      "text":"As the sun dips below the horizon, casting the sea in hues of orange and pink, the silhouette of a breaching whale becomes a fleeting yet unforgettable sight, etched forever in the memories of those who behold it",
-      "tags":["sun-set","sea","whale-watching"]
+      "text": "As the sun dips below the horizon, casting the sea in hues of orange and pink, the silhouette of a breaching whale becomes a fleeting yet unforgettable sight, etched forever in the memories of those who behold it",
+      "tags": ["sun-set", "sea", "whale-watching"]
     },
     {
-      "text":"Embark on a cycling adventure through lush forests and rolling hills, where encounters with wild elephants grazing peacefully in their natural habitat are a common sight.",
-      "tags":["cycling","wildlife"]
-    },{
-      "text":"As you pedal along scenic trails, keep an eye out for an array of wildlife, from colorful birds darting through the canopy to elusive mammals like deer and monkeys.",
-      "tags":["wildlife","scenic","bird"]
+      "text": "Embark on a cycling adventure through lush forests and rolling hills, where encounters with wild elephants grazing peacefully in their natural habitat are a common sight.",
+      "tags": ["cycling", "wildlife"]
     },
     {
-      "text":"During bird migration season, cyclists are treated to a spectacle of nature as thousands of migratory birds fill the skies, their graceful flight patterns painting a breathtaking tableau against the horizon.",
-      "tags":["cycling","migration","natural"]
+      "text": "As you pedal along scenic trails, keep an eye out for an array of wildlife, from colorful birds darting through the canopy to elusive mammals like deer and monkeys.",
+      "tags": ["wildlife", "scenic", "bird"]
     },
     {
-      "text":"After a thrilling day of cycling, cool off with a snorkeling excursion to explore vibrant coral reefs teeming with tropical fish, sea turtles, and other marine creatures.",
-      "tags":["cycling","snorkelling","sea-turtles"]
+      "text": "During bird migration season, cyclists are treated to a spectacle of nature as thousands of migratory birds fill the skies, their graceful flight patterns painting a breathtaking tableau against the horizon.",
+      "tags": ["cycling", "migration", "natural"]
     },
     {
-      "text":"For those seeking an adrenaline rush, experience the exhilaration of parachuting from dizzying heights, soaring through the sky like a bird as you take in panoramic views of the surrounding wilderness.",
-      "tags":["parachute"]
+      "text": "After a thrilling day of cycling, cool off with a snorkeling excursion to explore vibrant coral reefs teeming with tropical fish, sea turtles, and other marine creatures.",
+      "tags": ["cycling", "snorkelling", "sea-turtles"]
     },
     {
-      "text":"Dive beneath the surface to discover a world of wonder, where snorkelers are greeted by curious sea turtles, colorful fish, and even playful dolphins frolicking in the crystal-clear waters.",
-      "tags":["diving","wildlife","snorkelling","sea-turtles"]
+      "text": "For those seeking an adrenaline rush, experience the exhilaration of parachuting from dizzying heights, soaring through the sky like a bird as you take in panoramic views of the surrounding wilderness.",
+      "tags": ["parachute"]
     },
     {
-      "text":"As the sun sets, embark on a safari adventure to witness elephants gathering at watering holes, their majestic presence a testament to the untamed beauty of the natural world.",
-      "tags":["sun-set","wildlife","elephants","natural"]
+      "text": "Dive beneath the surface to discover a world of wonder, where snorkelers are greeted by curious sea turtles, colorful fish, and even playful dolphins frolicking in the crystal-clear waters.",
+      "tags": ["diving", "wildlife", "snorkelling", "sea-turtles"]
     },
     {
-      "text":"For the ultimate thrill-seekers, take to the skies with a tandem paragliding experience, soaring above the landscape with the wind in your hair and a bird's-eye view of the sprawling wilderness below.",
-      "tags":["paragliding"]
+      "text": "As the sun sets, embark on a safari adventure to witness elephants gathering at watering holes, their majestic presence a testament to the untamed beauty of the natural world.",
+      "tags": ["sun-set", "wildlife", "elephants", "natural"]
     },
     {
-      "text":"During bird migration season, thrill-seekers can witness the spectacle from above as they glide alongside flocks of birds on a paragliding adventure, feeling the rush of air beneath their wings.",
-      "tags":["migration","paragliding"]
+      "text": "For the ultimate thrill-seekers, take to the skies with a tandem paragliding experience, soaring above the landscape with the wind in your hair and a bird's-eye view of the sprawling wilderness below.",
+      "tags": ["paragliding"]
     },
     {
-      "text":"After a day of adrenaline-pumping activities, unwind with a leisurely stroll through lush jungle trails, where sightings of exotic birds and elusive wildlife are just around every bend.",
-      "tags":["cycling","wildlife","bird"]
+      "text": "During bird migration season, thrill-seekers can witness the spectacle from above as they glide alongside flocks of birds on a paragliding adventure, feeling the rush of air beneath their wings.",
+      "tags": ["migration", "paragliding"]
     },
     {
-      "text":"At the luxurious coastal resort, guests can indulge in thrilling jet ski rides along the sparkling sea, with occasional sightings of playful sea turtles popping up to greet them.",
-      "tags":["jet-skis","sea-turtles","resort"]
+      "text": "After a day of adrenaline-pumping activities, unwind with a leisurely stroll through lush jungle trails, where sightings of exotic birds and elusive wildlife are just around every bend.",
+      "tags": ["cycling", "wildlife", "bird"]
     },
     {
-      "text":"Diving enthusiasts flock to the vibrant coral reefs just offshore, where encounters with graceful sea turtles and colorful marine life make every descent a mesmerizing experience.",
-      "tags":["diving","sea","resort","party"]
+      "text": "At the luxurious coastal resort, guests can indulge in thrilling jet ski rides along the sparkling sea, with occasional sightings of playful sea turtles popping up to greet them.",
+      "tags": ["jet-skis", "sea-turtles", "resort"]
     },
     {
-      "text":"As the sun sets, the resort transforms into a lively party scene, where guests mingle and dance under the stars, sharing tales of their day's adventures with leopards and sea creatures alike.",
-      "tags":["leopards","resort","party","sea"]
+      "text": "Diving enthusiasts flock to the vibrant coral reefs just offshore, where encounters with graceful sea turtles and colorful marine life make every descent a mesmerizing experience.",
+      "tags": ["diving", "sea", "resort", "party"]
     },
     {
-      "text":"For those seeking excitement on land, guided tours offer the chance to spot elusive leopards prowling through the nearby jungle, adding a touch of wilderness to the resort experience.",
-      "tags":["leopards","resort"]
+      "text": "As the sun sets, the resort transforms into a lively party scene, where guests mingle and dance under the stars, sharing tales of their day's adventures with leopards and sea creatures alike.",
+      "tags": ["leopards", "resort", "party", "sea"]
     },
     {
-      "text":"Jet ski tours around the resort's coastal area often lead to thrilling encounters with dolphins and sea turtles, creating unforgettable memories for adventure-seekers of all ages.",
-      "tags":["jet-skis","sea-turtles","resort"]
+      "text": "For those seeking excitement on land, guided tours offer the chance to spot elusive leopards prowling through the nearby jungle, adding a touch of wilderness to the resort experience.",
+      "tags": ["leopards", "resort"]
     },
     {
-      "text":"After a day of adrenaline-fueled activities, guests can unwind in the comfort of the resort's luxurious accommodations, with stunning views of the sea and lush landscapes where leopards may roam.",
-      "tags":["resort","sea","leopards"]
+      "text": "Jet ski tours around the resort's coastal area often lead to thrilling encounters with dolphins and sea turtles, creating unforgettable memories for adventure-seekers of all ages.",
+      "tags": ["jet-skis", "sea-turtles", "resort"]
     },
     {
-      "text":"Party enthusiasts can enjoy beachside bonfires and lively gatherings, while nature lovers can embark on guided wildlife safaris to catch glimpses of majestic leopards and nesting sea turtles.",
-      "tags":["party","leopards","resort","wildlife","sea-turtles"]
+      "text": "After a day of adrenaline-fueled activities, guests can unwind in the comfort of the resort's luxurious accommodations, with stunning views of the sea and lush landscapes where leopards may roam.",
+      "tags": ["resort", "sea", "leopards"]
     },
     {
-      "text":"Snorkeling excursions provide intimate encounters with sea turtles gliding gracefully through crystal-clear waters, offering a serene contrast to the excitement of jet skiing and partying at the resort.",
-      "tags":["snorkelling","sea-turtles"]
+      "text": "Party enthusiasts can enjoy beachside bonfires and lively gatherings, while nature lovers can embark on guided wildlife safaris to catch glimpses of majestic leopards and nesting sea turtles.",
+      "tags": ["party", "leopards", "resort", "wildlife", "sea-turtles"]
     },
     {
-      "text":"From thrilling jet ski adventures to serene encounters with sea turtles during snorkeling trips, the resort offers a perfect blend of excitement and relaxation for every guest.",
-      "tags":["jet-skis","snorkelling","resort","diving","sea-turtles"]
+      "text": "Snorkeling excursions provide intimate encounters with sea turtles gliding gracefully through crystal-clear waters, offering a serene contrast to the excitement of jet skiing and partying at the resort.",
+      "tags": ["snorkelling", "sea-turtles"]
     },
     {
-      "text":"As night falls, the resort comes alive with the sounds of laughter and music, creating an unforgettable atmosphere where guests can dance the night away under the stars after exhilarating days of diving and leopard spotting.",
-      "tags":["party","resort","diving"]
+      "text": "From thrilling jet ski adventures to serene encounters with sea turtles during snorkeling trips, the resort offers a perfect blend of excitement and relaxation for every guest.",
+      "tags": ["jet-skis", "snorkelling", "resort", "diving", "sea-turtles"]
     },
     {
-      "text":"Could you recommend a destination that combines ancient history, educational opportunities, and scenic beauty for my next trip?",
-      "tags":["ancient","educational","scenic"]
+      "text": "As night falls, the resort comes alive with the sounds of laughter and music, creating an unforgettable atmosphere where guests can dance the night away under the stars after exhilarating days of diving and leopard spotting.",
+      "tags": ["party", "resort", "diving"]
     },
     {
-      "text":"Can you suggest a place where I can enjoy calm surroundings, cycle through picturesque landscapes, and watch stunning sunsets?",
-      "tags":["calm","cycling","sun-set"]
+      "text": "Could you recommend a destination that combines ancient history, educational opportunities, and scenic beauty for my next trip?",
+      "tags": ["ancient", "educational", "scenic"]
     },
     {
-      "text":"Can you recommend a destination where I can experience wildlife, go camping, and enjoy hiking trails?",
-      "tags":["wildlife","camping","hiking"]
+      "text": "Can you suggest a place where I can enjoy calm surroundings, cycle through picturesque landscapes, and watch stunning sunsets?",
+      "tags": ["calm", "cycling", "sun-set"]
     },
     {
-      "text":"Could you suggest a rural, tropical location where I can witness a breathtaking sunrise?",
-      "tags":["tropical","rural","sun-rise"]
+      "text": "Can you recommend a destination where I can experience wildlife, go camping, and enjoy hiking trails?",
+      "tags": ["wildlife", "camping", "hiking"]
     },
     {
-      "text":"Can you recommend a place with beautiful beaches that are perfect for swimming and snorkeling?",
+      "text": "Could you suggest a rural, tropical location where I can witness a breathtaking sunrise?",
+      "tags": ["tropical", "rural", "sun-rise"]
+    },
+    {
+      "text": "Can you recommend a place with beautiful beaches that are perfect for swimming and snorkeling?",
       "tags": ["beaches", "swimming", "snorkelling"]
     },
     {
-      "text":"Do you know of a place where I can go fishing and also have the chance to see sea turtles?",
-      "tags":["fishing","sea-turtles"]
+      "text": "Do you know of a place where I can go fishing and also have the chance to see sea turtles?",
+      "tags": ["fishing", "sea-turtles"]
+    },
+    {
+      "text": "Can you suggest a destination that offers thrilling jet ski rides and vibrant nightlife by the sea?",
+      "tags": ["jet-skis", "nightlife", "sea"]
+    },
+    {
+      "text": "Could you recommend a location that combines ancient ruins, religious sites, and a vibrant street food scene?",
+      "tags": ["ruins", "religious", "Street-food", "ancient"]
+    },
+    {
+      "text": "Can you suggest a place where I can go paragliding and also witness the annual migration of birds?",
+      "tags": ["paragliding", "migration", "bird"]
+    },
+    {
+      "text": "Do you know of a destination that offers thrilling zipline adventures and the chance to witness the annual migration of birds?",
+      "tags": ["zipline", "migration", "bird"]
+    },
+    {
+      "text": "Could you know of a place where I can see sea turtles and also enjoy thrilling jet ski rides?",
+      "tags": ["sea-turtles", "jet-skis"]
+    },
+    {
+      "text": "I want to see sea turtles",
+      "tags": ["sea-turtles"]
+    },
+    {
+      "text": "Where can I see sea turtles in Sri Lanka?",
+      "tags": ["sea-turtles"]
+    },
+    {
+      "text": "I want to go snorkeling with sea turtles",
+      "tags": ["snorkelling", "sea-turtles"]
+    },
+    {
+      "text": "I want to see sea turtles in their natural habitat",
+      "tags": ["sea-turtles"]
+    },
+    {
+      "text": "As the vibrant parachutes dotted the sky above, the golden sands of the beach shimmered under the warm sun, creating a picturesque scene of adventure and relaxation.",
+      "tags": ["parachute", "beaches", "sun-set"]
+    },
+    {
+      "text": "Camouflaged within the dappled shade of the forest, the elusive leopard prowled silently, its spotted coat blending seamlessly with the surrounding foliage as it stalked its prey.",
+      "tags": ["leopards", "wildlife"]
+    },
+    {
+      "text": "I'm a traveler seeking the enchanting spectacle of sea turtles gliding through crystal-clear waters, hoping your app can guide me to a destination where I can witness these majestic creatures in their natural habitat.",
+      "tags": ["sea-turtles", "sea"]
+    },
+    {
+      "text": "As a traveler eager for unforgettable encounters with wildlife, I'm yearning to witness the majestic grace of elephants roaming freely in their natural habitat. I'm entrusting your app to lead me to a destination where I can marvel at these gentle giants and appreciate their awe-inspiring presence.",
+      "tags": ["elephants", "wildlife"]
     }
   ]
 }
