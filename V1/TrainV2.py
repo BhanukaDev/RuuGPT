@@ -4,7 +4,7 @@ import torch.optim as optim
 import numpy as np
 
 from RuuGPTV1 import RuuGPTV1
-from NLPEngineV1 import encodeSentence, getVocabSize
+from NLPEngineV1 import encodeSentence, getVocabSize, allwords
 from config import getDataset, tags
 
 import time
@@ -59,6 +59,8 @@ data = {
     "output_size": output_size,
     "dropout": dropout,
     "state_dict": model.state_dict(),
+    "tags": tags,
+    "allwords": allwords,
 }
 
 torch.save(data, modelPath)
@@ -66,5 +68,5 @@ torch.save(data, modelPath)
 endTime = time.time()
 
 print("Training complete!")
-print("Model saved at", newModelPath)
+print("Model saved at", modelPath)
 print(f"Time taken: {endTime - startTime:.2f} seconds")

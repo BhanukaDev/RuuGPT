@@ -1,29 +1,42 @@
 import onnxruntime
 import torch
-import torch.nn as nn
-from NLPEngineV1 import encodeSentence
-import numpy as np
+from NLPEngineV1 import getVocabSize, encodeSentence
 from config import tags
 
 # Load the ONNX model
-onnx_model_path = "V1/onnxs/model6.onnx"
-model = onnxruntime.InferenceSession(onnx_model_path)
+onnx_model_path = "model.onnx"
+onnx_session = onnxruntime.InferenceSession(onnx_model_path)
 
-# Prepare input data
-sentence = "I want to see elephants near beaches"
-wordIndices = torch.tensor(encodeSentence(sentence),dtype=torch.int32).reshape(1,-1)
+# Get input and output names
+input_name = onnx_session.get_inputs()[0].name
+output_name = onnx_session.get_outputs()[0].name
 
-# Run inference
-output = model.run([], {"input": wordIndices.numpy()})
-# Print the output
-print(output)
+# Finding duplicate tags
+for i in range(len(tags)):
+    for j in range(i + 1, len(tags)):
+        if tags[i] == tags[j]:
+            print(f"Duplicate at {i}:{tags[i]} and {j}:{tags[j]}")
 
-# Print the tags
-probs = output[0][0]
+while True:
+    sentence = input("You: ")
+    if sentence == "quit" or sentence == "q":
+        break
 
-print("Related Tags: ")
-if(np.max(probs) < 0.7):
-    print("No tag found!")
-for idnx,prob in enumerate(probs):
-    if prob > 0:
-        print(tags[idnx], ":", prob)
+    # Encode the sentence
+    wordIndices = torch.tensor(encodeSentence(sentence), dtype=torch.int64).reshape(
+        1, -1
+    )
+
+    # Run the ONNX model
+    outputs = onnx_session.run([output_name], {input_name: wordIndices.numpy()})
+    probs = torch.sigmoid(torch.tensor(outputs[0]))
+
+    print("Related Tags: ")
+    results = []
+    for idnx, prob in enumerate(probs[0]):
+        results.append((tags[idnx], prob.item()))
+
+    results.sort(key=lambda x: x[1], reverse=True)
+    for tag, prob in results[:5]:
+        print(f"{tag}: {prob * 100:.2f}%")
+    print("")

@@ -1,32 +1,45 @@
 import torch
-
-from RuuGPTV1 import RuuGPTV1
-from NLPEngineV1 import encodeSentence
-
 import torch.onnx
 
-mdata = torch.load("V1/models/model17.pth")
+from RuuGPTV1 import RuuGPTV1
+from NLPEngineV1 import encodeSentence, getVocabSize
 
-# Create and load the model
-model = RuuGPTV1(
-    mdata["vocab_size"],
-    mdata["embedding_dim"],
-    mdata["hidden_size"],
-    mdata["output_size"],
-    mdata["dropout"],
-)
+modelPath = input("Enter Model Path : ")
+
+# Load the trained model
+trained_model_data = torch.load("V1/models/" + modelPath + ".pth")
+vocab_size = trained_model_data["vocab_size"]
+embedding_dim = trained_model_data["embedding_dim"]
+hidden_size = trained_model_data["hidden_size"]
+output_size = trained_model_data["output_size"]
+dropout = trained_model_data["dropout"]
+
+# Create an instance of your model
+model = RuuGPTV1(vocab_size, embedding_dim, hidden_size, output_size, dropout)
+model.load_state_dict(trained_model_data["state_dict"])
 
 # Set the model to evaluation mode
 model.eval()
 
-# Create a dummy input tensor with a correct shape (batch_size=1)
-sentence = "Hello"
-dummy_input = torch.tensor(encodeSentence(sentence), dtype=torch.int32).reshape(1, -1)
-
+sentence = "I want to visit the beach with mountains in the background."
+dummy_input = torch.tensor(encodeSentence(sentence), dtype=torch.int64).reshape(1, -1)
 # Export the model to ONNX format
-output_file = "V1/onnxs/model17.onnx"
-input_names = ["input_sequence"]
-output_names = ["output_probs"]
+output_path = "model.onnx"
+input_names = ["input_ids"]
+output_names = ["output"]
+dynamic_axes = {
+    "input_ids": {0: "batch_size", 1: "sequence_length"},
+    "output": {0: "batch_size"},
+}
+
 torch.onnx.export(
-    model, dummy_input, output_file, input_names=input_names, output_names=output_names
+    model,
+    dummy_input,
+    output_path,
+    input_names=input_names,
+    output_names=output_names,
+    dynamic_axes=dynamic_axes,
+    opset_version=11,
 )
+
+print("Model exported to ONNX format at", output_path)
