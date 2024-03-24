@@ -1,6 +1,54 @@
 {
   "intents": [
     {
+      "text": "historical places ",
+      "tags": ["ancient", "historical", "ruins"]
+    },
+    {
+      "text": "need to see whales",
+      "tags": ["whale-watching"]
+    },
+    {
+      "text": "place with a beautiful waterfalls",
+      "tags": ["waterfall"]
+    },
+    {
+      "text": "i need an adventurous hike, with a great view on top",
+      "tags": ["hiking"]
+    },
+    {
+      "text": "Where I can get kasippu",
+      "tags": ["kasippu pot"]
+    },
+    {
+      "text": "Where i can see ancient ruins?",
+      "tags": ["ancient", "ruins"]
+    },
+    {
+      "text": "I wanna go a place which has misty mountains",
+      "tags": ["mountains"]
+    },
+    {
+      "text": "urban experience in town",
+      "tags": ["urban"]
+    },
+    {
+      "text": "i wanna have a beer",
+      "tags": ["nightlife", "pubs"]
+    },
+    {
+      "text": "great night life",
+      "tags": ["nightlife"]
+    },
+    {
+      "text": "I love to see whales",
+      "tags": ["whale-watching"]
+    },
+    {
+      "text": "beautiful beaches in southern province",
+      "tags": ["beaches"]
+    },
+    {
       "text": "I would like to go for a walk in a hill with relaxing and scenice views",
       "tags": ["mountains", "calm", "scenic", "natural", "hiking"]
     },
@@ -338,7 +386,7 @@
     },
     {
       "text": "Immerse yourself in the vibrant atmosphere of Galle Fort, exploring its quaint streets and historic landmarks.",
-      "tags": ["galle", "historical"]
+      "tags": ["galle", "historical", "ancient"]
     },
     {
       "text": "Get your adrenaline pumping with an exhilarating jet ski ride across the crystal-clear waters of Bentota Beach.",
