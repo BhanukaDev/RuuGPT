@@ -8,7 +8,11 @@ from V1.config import tags
 from flask_cors import CORS
 
 app = Flask(__name__)
-CORS(app)
+CORS(app,resource={
+    r"/*":{
+        "origins":"*"
+        }
+    })
 
 
 # Load the latest model
@@ -48,7 +52,7 @@ def handle_generate_tags():
         probs = torch.sigmoid(output)
 
         for index, prob in enumerate(probs[0]):
-            result_tags.append(tags[index], prob.item())
+            result_tags.append((tags[index], prob.item()))
         result_tags.sort(key=lambda x: x[1], reverse=True)
 
     # Bhanuka's code end
