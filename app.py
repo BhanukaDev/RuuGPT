@@ -8,11 +8,7 @@ from V1.config import tags
 from flask_cors import CORS
 
 app = Flask(__name__)
-CORS(app,resource={
-    r"/*":{
-        "origins":"*"
-        }
-    })
+CORS(app, resource={r"/*": {"origins": "*"}})
 
 
 # Load the latest model
@@ -40,7 +36,6 @@ def handle_generate_tags():
     if not sentence:
         return jsonify({"error": "No sentence provided"}), 400
 
-    # Bhanuka's code (Duvin, Here I will return list of tags, use it for query!)
     result_tags = []
 
     with torch.no_grad():
@@ -55,10 +50,7 @@ def handle_generate_tags():
             result_tags.append((tags[index], prob.item()))
         result_tags.sort(key=lambda x: x[1], reverse=True)
 
-    # Bhanuka's code end
-
-    # Generate tags with probabilities above 60%
-    tag_results = result_tags[:5]
+    tag_results = result_tags[:2]
 
     # Extract just the tag names for querying Firestore
     query_tags = [tag for tag, _ in tag_results]
