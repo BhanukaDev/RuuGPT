@@ -5,6 +5,7 @@ from nltk.stem import PorterStemmer
 from nltk.corpus import words
 import string
 from config import getallWords
+import random
 
 # nltk.download("stopwords")
 # nltk.download("punkt")
@@ -42,6 +43,8 @@ def encodeSentence(sentence):
     tokens = stem(tokens)
     tokens = tokens[:maxLength]
     ids = [encode(token) for token in tokens]
+    for _ in range(random.randint(0, 100)):
+        ids.insert(0, 0)
     return ids
 
 

@@ -49,10 +49,29 @@ with torch.no_grad():
         # if(probs[0].max() < 0.6):
         #     print("No tag found!")
         for idnx, prob in enumerate(probs[0]):
-            # if prob > 0.6:
-            results.append((tags[idnx], prob.item()))
+            if prob > 0.01:
+                results.append((tags[idnx], prob.item()))
         results.sort(key=lambda x: x[1], reverse=True)
 
-        for tag, prob in results[:5]:
-            print(f"{tag}: {prob*100:.2f}%")
-            print("")
+        results = results[:3]
+
+        # if results[0][1] > sum([x[1] for x in results[1:]]):
+        #     temp = results[0]
+        #     results.clear()
+        #     results.append(temp)
+        # elif results[0][1] + results[1][1] > sum([x[1] for x in results[2:]]):
+        #     temp = results[:2]
+        #     results.clear()
+        #     results.extend(temp)
+        # elif results[0][1] + results[1][1] + results[2][1] > sum(
+        #     [x[1] for x in results[3:]]
+        # ):
+        #     temp = results[:3]
+        #     results.clear()
+        #     results.extend(temp)
+
+        # for tag, prob in results:
+        #     print(f"{tag}: {prob*100:.2f}%")
+        #     print("")
+        for y in results:
+            print(y)

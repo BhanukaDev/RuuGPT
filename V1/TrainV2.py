@@ -3,6 +3,7 @@ import torch.nn as nn
 import torch.optim as optim
 import numpy as np
 
+from RuuGPTv2 import RuuGPTV2
 from RuuGPTV1 import RuuGPTV1
 from NLPEngineV1 import encodeSentence, getVocabSize, allwords
 from config import getDataset, tags
@@ -25,7 +26,8 @@ modelPath = input("Enter model path: ")
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-model = RuuGPTV1(vocab_size, embedding_dim, hidden_size, output_size, dropout)
+# model = RuuGPTV1(vocab_size, embedding_dim, hidden_size, output_size, dropout)
+model = RuuGPTV2(vocab_size, embedding_dim, hidden_size, output_size, dropout)
 
 model.to(device)
 
