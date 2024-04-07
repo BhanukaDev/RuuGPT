@@ -1,428 +1,92 @@
 {
   "intents": [
     {
-      "text": "I would like to go for a walk in a hill with relaxing and scenice views",
-      "tags": ["mountains", "calm", "scenic", "natural", "hiking"]
+      "text": "ancient",
+      "tags": ["ancient"]
     },
-
     {
-      "text": "Suggest me a calming environment to go for a camping which is more scenic",
-      "tags": ["camping", "calm", "scenic"]
+      "text": "historical",
+      "tags": ["historical"]
     },
-
     {
-      "text": "Enjoy a serene camping experience amidst the lush mountains of Nuwara Eliya, Sri Lanka.",
-      "tags": ["camping", "mountains", "nuwara"]
+      "text": "ruins",
+      "tags": ["ruins"]
     },
     {
-      "text": "Explore the urban jungles of Colombo, where vibrant street food stalls and bustling markets await.",
-      "tags": ["urban", "street-food"]
-    },
-    {
-      "text": "Embark on a thrilling fishing expedition in the tranquil waters of Sri Lanka's rural villages.",
-      "tags": ["fishing", "rural"]
-    },
-    {
-      "text": "Unwind in nature with a peaceful hiking adventure through the tropical rainforests of Sinharaja.",
-      "tags": ["hiking", "tropical", "sinhala"]
-    },
-    {
-      "text": "Immerse yourself in the rich Buddhist heritage of Anuradhapura, home to ancient temples and sacred relics.",
-      "tags": ["buddhist", "ancient"]
-    },
-    {
-      "text": "Discover the Islamic influence in Sri Lanka with a visit to the historic mosques of Galle and Colombo.",
-      "tags": ["islam", "galle", "urban"]
-    },
-    {
-      "text": "Witness the majestic leopards roam freely in Yala National Park, a haven for wildlife enthusiasts.",
-      "tags": ["wildlife", "leopards"]
-    },
-    {
-      "text": "Dive into the crystal-clear waters of Hikkaduwa and explore vibrant coral reefs teeming with marine life.",
-      "tags": ["diving", "sea"]
-    },
-    {
-      "text": "Embark on an exhilarating cycling tour through the scenic countryside of Sigiriya, dotted with ancient ruins and lush landscapes.",
-      "tags": ["cycling", "ruins", "scenic"]
-    },
-    {
-      "text": "Witness the awe-inspiring sight of sea turtles nesting along the sandy shores of Kosgoda Beach.",
-      "tags": ["sea-turtles", "beaches"]
-    },
-    {
-      "text": "Feel the adrenaline rush as you speed across the azure waters on a jet ski adventure in Bentota.",
-      "tags": ["jet-skis", "sea"]
-    },
-    {
-      "text": "Indulge in the vibrant nightlife scene of Colombo, with its eclectic mix of pubs and clubs.",
-      "tags": ["pubs", "urban", "nightlife"]
-    },
-    {
-      "text": "Embark on a scenic boat ride along the tranquil waters of Kandy Lake, surrounded by lush greenery.",
-      "tags": ["boatriding", "scenic"]
-    },
-    {
-      "text": "Experience the authentic taste of Sri Lanka with a sip of kasippu pot, a traditional alcoholic beverage.",
-      "tags": ["kasippu pot", "native", "street-food"]
-    },
-    {
-      "text": "Explore the picturesque waterfalls of Ramboda and immerse yourself in the natural beauty of Sri Lanka.",
-      "tags": ["waterfall", "scenic"]
-    },
-    {
-      "text": "Witness the spectacular annual migration of birds at the wetlands of Bundala National Park.",
-      "tags": ["migration", "wildlife", "wetlands"]
-    },
-    {
-      "text": "Discover the rich cultural heritage of Jaffna with its vibrant Tamil festivals and ancient Hindu temples.",
-      "tags": ["jaffna", "tamil", "hindu", "ancient"]
-    },
-    {
-      "text": "Embark on a scenic train journey through the rural heartlands of Sri Lanka, passing by picturesque villages and verdant landscapes.",
-      "tags": ["trains", "rural", "scenic"]
-    },
-    {
-      "text": "Savor the exotic flavors of Sri Lankan street food as you embark on a culinary crawl through the bustling markets of Colombo.",
-      "tags": ["street-food", "urban"]
-    },
-    {
-      "text": "Explore the ancient ruins of Polonnaruwa and delve into Sri Lanka's rich history and heritage.",
-      "tags": ["ruins", "ancient"]
-    },
-    {
-      "text": "Experience the thrill of off-road racing through the rugged terrain of Knuckles Mountain Range.",
-      "tags": ["off-road", "mountains", "racing"]
-    },
-    {
-      "text": "Witness the stunning sunset over the tranquil waters of Unawatuna Bay, a perfect end to a day of adventure.",
-      "tags": ["sun-set", "sea", "scenic"]
-    },
-    {
-      "text": "Discover the calm serenity of the mangrove swamps in Negombo, home to diverse wildlife and tranquil waterways.",
-      "tags": ["calm", "swamp", "wildlife"]
-    },
-    {
-      "text": "Soar through the treetops on an exhilarating zipline adventure in the lush jungles of Kitulgala.",
-      "tags": ["zipline", "jungles"]
-    },
-    {
-      "text": "Experience the thrill of paragliding over the scenic landscapes of Ella, with panoramic views of lush tea plantations and misty mountains.",
-      "tags": ["paragliding", "scenic", "ella"]
-    },
-    {
-      "text": "Relax and unwind at a luxurious beach resort in Mirissa, with pristine beaches and stunning ocean views.",
-      "tags": ["resort", "beaches"]
-    },
-    {
-      "text": "Party the night away at the vibrant beach bars of Unawatuna, with live music and cocktails by the sea.",
-      "tags": ["party", "beaches", "nightlife"]
-    },
-    {
-      "text": "Get up close and personal with Sri Lanka's majestic elephants at the Udawalawe National Park.",
-      "tags": ["elephants", "wildlife"]
-    },
-    {
-      "text": "Explore the ancient ruins of Anuradhapura and uncover the fascinating history of Sri Lanka's first capital.",
-      "tags": ["ruins", "ancient"]
-    },
-    {
-      "text": "Witness the breathtaking sunrise from the summit of Adam's Peak, a sacred pilgrimage site revered by Buddhists, Hindus, and Muslims alike.",
-      "tags": ["sun-rise", "religious", "buddhist", "hindu", "muslim"]
-    },
-    {
-      "text": "Cool off with a refreshing swim in the crystal-clear waters of a secluded lagoon in Trincomalee.",
-      "tags": ["swimming", "lagoon"]
-    },
-    {
-      "text": "Embark on a thrilling safari adventure in the untamed wilderness of Yala National Park, home to diverse wildlife including leopards, elephants, and sloth bears.",
-      "tags": ["safari", "wildlife"]
-    },
-    {
-      "text": "Indulge in a culinary journey through Sri Lanka's diverse cuisine at the finest restaurants in Colombo.",
-      "tags": ["restaurants", "urban", "food"]
-    },
-
-    {
-      "text": "Explore the urban jungles of Colombo, where vibrant street food stalls and bustling markets await.",
-      "tags": ["urban"]
-    },
-    {
-      "text": "I want to explore the wildlife in Sri Lanka.",
-      "tags": ["wildlife"]
-    },
-    {
-      "text": "I want to see beaches",
-      "tags": ["beaches"]
-    },
-    {
-      "text": "A wildlife sanctuary in the heart of Sri Lanka's natural beauty.",
-      "tags": ["wildlife"]
-    },
-    {
-      "text": "wildlife",
-      "tags": ["wildlife"]
-    },
-    {
-      "text": "Visit the lush greenery and discover unique wildlife species in Sri Lanka.",
-      "tags": ["wildlife"]
-    },
-    {
-      "text": "Chasing waterfalls in Sri Lanka sounds like a dream vacation.",
-      "tags": ["waterfall"]
-    },
-    {
-      "text": "Immerse yourself in the serenity of Sri Lanka's majestic waterfalls.",
-      "tags": ["waterfall"]
-    },
-    {
-      "text": "Hike through dense forests to find hidden waterfalls in Sri Lanka.",
-      "tags": ["waterfall"]
-    },
-    {
-      "text": "I want to visit mountains around Sri Lanka.",
-      "tags": ["mountains"]
-    },
-    {
-      "text": "Explore the breathtaking mountain ranges in Sri Lanka.",
-      "tags": ["mountains"]
-    },
-    {
-      "text": "A peaceful retreat nestled in the mountains of Sri Lanka.",
-      "tags": ["mountains"]
-    },
-    {
-      "text": "Mountain",
-      "tags": ["mountains"]
-    },
-    {
-      "text": "I want to visit beaches around Sri Lanka.",
-      "tags": ["beaches"]
-    },
-    {
-      "text": "Sandy beaches full of sun and fun.",
-      "tags": ["beaches"]
-    },
-    {
-      "text": "Beautiful beach surrounded by mountains.",
-      "tags": ["beaches", "mountains"]
-    },
-    {
-      "text": "A mountain range with a golden sandy beautiful beach.",
-      "tags": ["beaches", "mountains"]
-    },
-    {
-      "text": "Beaches",
-      "tags": ["beaches"]
-    },
-    {
-      "text": "Experience the thrill of encountering wildlife on the pristine beaches of Sri Lanka.",
-      "tags": ["beaches", "wildlife"]
-    },
-    {
-      "text": "Relax on the beach and listen to the soothing sounds of nearby waterfalls in Sri Lanka.",
-      "tags": ["beaches", "waterfall"]
-    },
-    {
-      "text": "A magical combination of mountains, beaches, and wildlife awaits you in Sri Lanka.",
-      "tags": ["beaches", "mountains", "wildlife"]
-    },
-    {
-      "text": "Discover hidden waterfalls as you trek through the mountainous landscapes of Sri Lanka.",
-      "tags": ["mountains", "waterfall"]
-    },
-    {
-      "text": "The pristine beaches are adorned with vibrant wildlife, where coastal ecosystems thrive, featuring diverse bird species, marine life, and lush vegetation.",
-      "tags": ["beaches", "wildlife"]
-    },
-    {
-      "text": "I want to go camping in the mountains to have an adventurous trip and to feel the fresh air",
-      "tags": ["camping", "mountains"]
-    },
-    {
-      "text": "Suggest some locations which are great for camping",
-      "tags": ["camping"]
-    },
-    {
-      "text": "camping",
-      "tags": ["camping"]
-    },
-
-    {
-      "text": "beautiful wildlife here in sri lanka in mountain ranges",
-      "tags": ["mountains", "wildlife"]
-    },
-    {
-      "text": "Where can I see leopards in Sri Lanka",
-      "tags": ["wildlife", "leopards"]
-    },
-    {
-      "text": "I want to see elephants in Sri Lanka",
-      "tags": ["wildlife", "elephants"]
-    },
-    {
-      "text": "Beautiful majestic animals in Sri Lanka",
-      "tags": ["elephants"]
-    },
-    {
-      "text": "Are there tigers here in sri lanka?",
-      "tags": ["wildlife", "leopards"]
-    },
-    {
-      "text": "elephants",
-      "tags": ["elephants"]
-    },
-    {
-      "text": "leopards",
-      "tags": ["leopards"]
-    },
-    {
-      "text": "tigers",
-      "tags": ["leopards"]
-    },
-    {
-      "text": "Nestled in the heart of Sri Lanka, Ella captivates with its lush tea plantations, misty mountains, and cascading waterfalls. The iconic Nine Arch Bridge and Little Adam's Peak offer breathtaking vistas, making Ella a haven for nature lovers and seekers of serenity.",
-      "tags": ["mountains", "waterfall", "ella"]
-    },
-    {
-      "text": "The pristine beaches of Mirissa are a haven for sun-seekers and surfers alike. The tranquil waters are perfect for swimming and snorkeling, while the golden sandy shores are ideal for sunbathing and beach volleyball. The nearby Mirissa Harbour offers exciting whale-watching excursions, where you can witness the majestic marine giants in their natural habitat.",
-      "tags": ["beaches", "whale-watching"]
-    },
-    {
-      "text": "I want to see waterfalls",
-      "tags": ["waterfall"]
-    },
-    {
-      "text": "waterfalls",
-      "tags": ["waterfall"]
-    },
-    {
-      "text": "Where I can see giant whales in Sri Lanka?",
+      "text": "whale-watching",
       "tags": ["whale-watching"]
     },
     {
-      "text": "whale watching",
-      "tags": ["whale-watching"]
+      "text": "waterfall",
+      "tags": ["waterfall"]
     },
     {
-      "text": "I want to see the iconic Nine Arch Bridge in Ella",
-      "tags": ["ella"]
+      "text": "hiking",
+      "tags": ["hiking"]
     },
     {
-      "text": "Beautiful water falling from the mountains",
-      "tags": ["waterfall", "mountains"]
+      "text": "kasippu pot",
+      "tags": ["kasippu pot"]
     },
     {
-      "text": "I like to hike in the mountains",
-      "tags": ["mountains", "hiking"]
-    },
-    {
-      "text": "Experience the tranquility of camping under the stars surrounded by lush greenery and cascading waterfalls in Nuwara Eliya.",
-      "tags": ["nuwara", "camping", "waterfall"]
-    },
-    {
-      "text": "Embark on an adventurous hike through the rugged terrain of Horton Plains National Park, spotting rare wildlife along the way.",
-      "tags": ["hiking", "wildlife"]
-    },
-    {
-      "text": "Explore the ancient ruins of Anuradhapura, immersing yourself in the rich history and culture of Sri Lanka.",
-      "tags": ["ruins", "ancient"]
-    },
-    {
-      "text": "Indulge in delicious street food delicacies while strolling through the bustling markets of Colombo.",
-      "tags": ["Street-food"]
-    },
-    {
-      "text": "Witness the breathtaking sight of majestic whales gracefully gliding through the azure waters off the coast of Mirissa.",
-      "tags": ["whale-watching", "sea"]
-    },
-    {
-      "text": "Immerse yourself in the vibrant atmosphere of Galle Fort, exploring its quaint streets and historic landmarks.",
-      "tags": ["galle", "historical"]
-    },
-    {
-      "text": "Get your adrenaline pumping with an exhilarating jet ski ride across the crystal-clear waters of Bentota Beach.",
-      "tags": ["jet-skis", "beaches"]
-    },
-    {
-      "text": "Discover the hidden treasures of Jaffna, from its bustling markets to its ancient Hindu temples.",
-      "tags": ["jaffna", "hindu"]
-    },
-    {
-      "text": "Embark on a thrilling safari adventure in Yala National Park, where you can spot elusive leopards and majestic elephants.",
-      "tags": ["safari", "wildlife"]
-    },
-    {
-      "text": "Unwind in luxury at a tropical resort nestled amidst swaying palm trees and overlooking pristine beaches.",
-      "tags": ["resort", "beaches"]
-    },
-    {
-      "text": "Join a guided cycling tour through the picturesque countryside, immersing yourself in the rural charm of Sri Lanka.",
-      "tags": ["cycling", "rural"]
-    },
-    {
-      "text": "Experience the serenity of a sunrise meditation session at a tranquil Buddhist temple nestled in the heart of the mountains.",
-      "tags": ["sun-rise", "buddhist", "mountains"]
-    },
-    {
-      "text": "Savor the flavors of traditional Sri Lankan cuisine at authentic restaurants, where you can sample spicy curries and fragrant rice dishes.",
-      "tags": ["restaurants", "sinhala"]
-    },
-    {
-      "text": "Embark on a thrilling whitewater rafting adventure down the rushing rapids of the Kelani River, surrounded by lush tropical scenery.",
-      "tags": ["rafting", "tropical"]
-    },
-    {
-      "text": "Explore the vibrant coral reefs and encounter colorful marine life while snorkeling in the crystal-clear waters of Hikkaduwa.",
-      "tags": ["snorkelling", "sea"]
-    },
-    {
-      "text": "Discover the rich cultural heritage of Sri Lanka with a visit to the ancient temples of Polonnaruwa, marveling at intricate stone carvings and towering stupas.",
-      "tags": ["ancient", "religious"]
-    },
-    {
-      "text": "Enjoy an evening of relaxation and camaraderie at lively beachfront pubs, where you can sip on refreshing cocktails and enjoy live music.",
-      "tags": ["pubs", "beaches"]
-    },
-    {
-      "text": "Embark on a thrilling zipline adventure through the lush rainforest canopy, taking in breathtaking views of cascading waterfalls and verdant landscapes.",
-      "tags": ["zipline", "waterfall"]
-    },
-    {
-      "text": "Marvel at the spectacular sight of hundreds of migratory birds flocking to the tranquil wetlands of Bundala National Park.",
-      "tags": ["migration", "wetlands"]
-    },
-    {
-      "text": "Witness the awe-inspiring beauty of a tropical sunset as the sky is painted in shades of orange and pink over the calm waters of a lagoon.",
-      "tags": ["sun-set", "tropical", "lagoon"]
-    },
-    {
-      "text": "I want to paraglide",
-      "tags": ["paragliding"]
-    },
-    {
-      "text": "Tell me a calm place to visit",
-      "tags": ["calm"]
-    },
-    {
-      "text": "nuwara",
-      "tags": ["nuwara"]
+      "text": "mountains",
+      "tags": ["mountains"]
     },
     {
       "text": "urban",
       "tags": ["urban"]
     },
     {
-      "text": "fishing",
-      "tags": ["fishing"]
+      "text": "nightlife",
+      "tags": ["nightlife"]
+    },
+    {
+      "text": "pubs",
+      "tags": ["pubs"]
+    },
+    {
+      "text": "beaches",
+      "tags": ["beaches"]
+    },
+    {
+      "text": "calm",
+      "tags": ["calm"]
+    },
+    {
+      "text": "scenic",
+      "tags": ["scenic"]
+    },
+    {
+      "text": "natural",
+      "tags": ["natural"]
     },
     {
       "text": "camping",
       "tags": ["camping"]
     },
     {
-      "text": "hiking",
-      "tags": ["hiking"]
+      "text": "nuwara",
+      "tags": ["nuwara"]
+    },
+    {
+      "text": "street-food",
+      "tags": ["street-food"]
+    },
+    {
+      "text": "fishing",
+      "tags": ["fishing"]
+    },
+    {
+      "text": "rural",
+      "tags": ["rural"]
+    },
+    {
+      "text": "tropical",
+      "tags": ["tropical"]
+    },
+    {
+      "text": "sinhala",
+      "tags": ["sinhala"]
     },
     {
       "text": "buddhist",
@@ -433,12 +97,24 @@
       "tags": ["islam"]
     },
     {
+      "text": "galle",
+      "tags": ["galle"]
+    },
+    {
+      "text": "wildlife",
+      "tags": ["wildlife"]
+    },
+    {
       "text": "leopards",
       "tags": ["leopards"]
     },
     {
       "text": "diving",
       "tags": ["diving"]
+    },
+    {
+      "text": "sea",
+      "tags": ["sea"]
     },
     {
       "text": "cycling",
@@ -453,48 +129,68 @@
       "tags": ["jet-skis"]
     },
     {
-      "text": "pubs",
-      "tags": ["pubs"]
-    },
-    {
       "text": "boatriding",
       "tags": ["boatriding"]
-    },
-    {
-      "text": "kasippu pot",
-      "tags": ["kasippu pot"]
     },
     {
       "text": "native",
       "tags": ["native"]
     },
     {
-      "text": "waterfall",
-      "tags": ["waterfall"]
-    },
-    {
       "text": "migration",
       "tags": ["migration"]
     },
     {
-      "text": "sinhala",
-      "tags": ["sinhala"]
+      "text": "wetlands",
+      "tags": ["wetlands"]
     },
     {
-      "text": "surfing",
-      "tags": ["surfing"]
+      "text": "jaffna",
+      "tags": ["jaffna"]
     },
     {
-      "text": "rafting",
-      "tags": ["rafting"]
+      "text": "tamil",
+      "tags": ["tamil"]
     },
     {
-      "text": "whale-watching",
-      "tags": ["whale-watching"]
+      "text": "hindu",
+      "tags": ["hindu"]
     },
     {
-      "text": "malay",
-      "tags": ["malay"]
+      "text": "trains",
+      "tags": ["trains"]
+    },
+    {
+      "text": "off-road",
+      "tags": ["off-road"]
+    },
+    {
+      "text": "racing",
+      "tags": ["racing"]
+    },
+    {
+      "text": "sun-set",
+      "tags": ["sun-set"]
+    },
+    {
+      "text": "swamp",
+      "tags": ["swamp"]
+    },
+    {
+      "text": "zipline",
+      "tags": ["zipline"]
+    },
+    {
+      "text": "jungles",
+      "tags": ["jungles"]
+    },
+    {
+      "text": "paragliding",
+      "tags": ["paragliding"]
+    },
+    {
+      "text": "ella",
+      "tags": ["ella"]
     },
     {
       "text": "resort",
@@ -505,12 +201,56 @@
       "tags": ["party"]
     },
     {
-      "text": "beaches",
-      "tags": ["beaches"]
+      "text": "elephants",
+      "tags": ["elephants"]
     },
     {
-      "text": "wildlife",
-      "tags": ["wildlife"]
+      "text": "sun-rise",
+      "tags": ["sun-rise"]
+    },
+    {
+      "text": "religious",
+      "tags": ["religious"]
+    },
+    {
+      "text": "muslim",
+      "tags": ["muslim"]
+    },
+    {
+      "text": "swimming",
+      "tags": ["swimming"]
+    },
+    {
+      "text": "lagoon",
+      "tags": ["lagoon"]
+    },
+    {
+      "text": "safari",
+      "tags": ["safari"]
+    },
+    {
+      "text": "restaurants",
+      "tags": ["restaurants"]
+    },
+    {
+      "text": "food",
+      "tags": ["food"]
+    },
+    {
+      "text": "rafting",
+      "tags": ["rafting"]
+    },
+    {
+      "text": "snorkelling",
+      "tags": ["snorkelling"]
+    },
+    {
+      "text": "surfing",
+      "tags": ["surfing"]
+    },
+    {
+      "text": "malay",
+      "tags": ["malay"]
     },
     {
       "text": "bird",
@@ -525,355 +265,28 @@
       "tags": ["educational"]
     },
     {
-      "text": "tropical",
-      "tags": ["tropical"]
-    },
-    {
-      "text": "jaffna",
-      "tags": ["jaffna"]
-    },
-    {
-      "text": "trains",
-      "tags": ["trains"]
-    },
-    {
-      "text": "rural",
-      "tags": ["rural"]
-    },
-    {
-      "text": "religious",
-      "tags": ["religious"]
-    },
-    {
       "text": "waterjet",
       "tags": ["waterjet"]
-    },
-    {
-      "text": "wetlands",
-      "tags": ["wetlands"]
-    },
-    {
-      "text": "Street-food",
-      "tags": ["Street-food"]
-    },
-    {
-      "text": "safari",
-      "tags": ["safari"]
-    },
-    {
-      "text": "restaurants",
-      "tags": ["restaurants"]
     },
     {
       "text": "crawl",
       "tags": ["crawl"]
     },
     {
-      "text": "ruins",
-      "tags": ["ruins"]
-    },
-    {
-      "text": "off-road",
-      "tags": ["off-road"]
-    },
-    {
-      "text": "racing",
-      "tags": ["racing"]
-    },
-    {
-      "text": "muslim",
-      "tags": ["muslim"]
-    },
-    {
-      "text": "galle",
-      "tags": ["galle"]
-    },
-    {
-      "text": "snorkelling",
-      "tags": ["snorkelling"]
-    },
-    {
-      "text": "elephants",
-      "tags": ["elephants"]
-    },
-    {
-      "text": "tamil",
-      "tags": ["tamil"]
-    },
-    {
-      "text": "ancient",
-      "tags": ["ancient"]
-    },
-    {
-      "text": "sun-rise",
-      "tags": ["sun-rise"]
-    },
-    {
-      "text": "natural",
-      "tags": ["natural"]
-    },
-    {
-      "text": "swimming",
-      "tags": ["swimming"]
-    },
-    {
-      "text": "lagoon",
-      "tags": ["lagoon"]
-    },
-    {
       "text": "dry",
       "tags": ["dry"]
     },
     {
-      "text": "hindu",
-      "tags": ["hindu"]
-    },
-    {
-      "text": "zipline",
-      "tags": ["zipline"]
-    },
-    {
-      "text": "sea",
-      "tags": ["sea"]
-    },
-    {
-      "text": "Christian",
-      "tags": ["Christian"]
+      "text": "christian",
+      "tags": ["christian"]
     },
     {
       "text": "tanks",
       "tags": ["tanks"]
     },
     {
-      "text": "paragliding",
-      "tags": ["paragliding"]
-    },
-    {
       "text": "bridges",
       "tags": ["bridges"]
-    },
-    {
-      "text": "sun-set",
-      "tags": ["sun-set"]
-    },
-    {
-      "text": "calm",
-      "tags": ["calm"]
-    },
-    {
-      "text": "swamp",
-      "tags": ["swamp"]
-    },
-    {
-      "text": "scenic",
-      "tags": ["scenic"]
-    },
-    {
-      "text": "I travel tomorrow morning in lagoon area",
-      "tags": ["lagoon", "natural"]
-    },
-    {
-      "text": "Standing on the rugged cliffs overlooking the vast expanse of the sea, one can't help but feel a sense of awe at the natural beauty unfolding before them.",
-      "tags": ["scenic", "natural", "sea", "sun-rise", "sun-set"]
-    },
-    {
-      "text": "As the sun sets over the horizon, casting a golden hue across the tranquil waters, the scene becomes a breathtaking panorama, perfect for capturing in photographs.",
-      "tags": ["scenic", "natural", "sea", "sun-rise", "sun-set"]
-    },
-    {
-      "text": "The gentle lapping of the waves against the shore provides a soothing soundtrack to accompany the mesmerizing sight of whales breaching in the distance.",
-      "tags": [
-        "scenic",
-        "sea",
-        "surfing",
-        "whale-watching",
-        "natural",
-        "boatriding"
-      ]
-    },
-    {
-      "text": "Whale watching enthusiasts gather eagerly aboard sturdy vessels, eagerly anticipating the chance to witness these majestic creatures in their natural habitat.",
-      "tags": ["whale-watching", "natural", "educational", "boatriding"]
-    },
-    {
-      "text": "Against the backdrop of a crimson sunset, a pod of whales gracefully glides through the ocean, their sleek forms rising and falling with effortless grace.",
-      "tags": ["sun-set", "sea", "surfing", "whale-watching"]
-    },
-    {
-      "text": "The rugged coastline, adorned with craggy cliffs and windswept trees, offers a picturesque setting for spotting whales as they migrate along their ancient pathways.",
-      "tags": ["beaches", "natural", "whale-watching", "surfing"]
-    },
-    {
-      "text": "With binoculars in hand, visitors scan the horizon, eagerly searching for the telltale signs of spouts and breaches that signal the presence of these magnificent marine mammals.",
-      "tags": ["whale-watching", "sea"]
-    },
-    {
-      "text": "The sea breeze carries the salty tang of the ocean as it sweeps across the deck, adding to the sense of adventure and excitement that accompanies whale watching expeditions.",
-      "tags": ["sea", "whale-watching"]
-    },
-    {
-      "text": "Against the backdrop of a dramatic seascape, a family of whales frolics in the waves, their playful antics a joy to behold for those lucky enough to witness them.",
-      "tags": ["fishing", "sea", "whale-watching"]
-    },
-    {
-      "text": "As the sun dips below the horizon, casting the sea in hues of orange and pink, the silhouette of a breaching whale becomes a fleeting yet unforgettable sight, etched forever in the memories of those who behold it",
-      "tags": ["sun-set", "sea", "whale-watching"]
-    },
-    {
-      "text": "Embark on a cycling adventure through lush forests and rolling hills, where encounters with wild elephants grazing peacefully in their natural habitat are a common sight.",
-      "tags": ["cycling", "wildlife"]
-    },
-    {
-      "text": "As you pedal along scenic trails, keep an eye out for an array of wildlife, from colorful birds darting through the canopy to elusive mammals like deer and monkeys.",
-      "tags": ["wildlife", "scenic", "bird"]
-    },
-    {
-      "text": "During bird migration season, cyclists are treated to a spectacle of nature as thousands of migratory birds fill the skies, their graceful flight patterns painting a breathtaking tableau against the horizon.",
-      "tags": ["cycling", "migration", "natural"]
-    },
-    {
-      "text": "After a thrilling day of cycling, cool off with a snorkeling excursion to explore vibrant coral reefs teeming with tropical fish, sea turtles, and other marine creatures.",
-      "tags": ["cycling", "snorkelling", "sea-turtles"]
-    },
-    {
-      "text": "For those seeking an adrenaline rush, experience the exhilaration of parachuting from dizzying heights, soaring through the sky like a bird as you take in panoramic views of the surrounding wilderness.",
-      "tags": ["parachute"]
-    },
-    {
-      "text": "Dive beneath the surface to discover a world of wonder, where snorkelers are greeted by curious sea turtles, colorful fish, and even playful dolphins frolicking in the crystal-clear waters.",
-      "tags": ["diving", "wildlife", "snorkelling", "sea-turtles"]
-    },
-    {
-      "text": "As the sun sets, embark on a safari adventure to witness elephants gathering at watering holes, their majestic presence a testament to the untamed beauty of the natural world.",
-      "tags": ["sun-set", "wildlife", "elephants", "natural"]
-    },
-    {
-      "text": "For the ultimate thrill-seekers, take to the skies with a tandem paragliding experience, soaring above the landscape with the wind in your hair and a bird's-eye view of the sprawling wilderness below.",
-      "tags": ["paragliding"]
-    },
-    {
-      "text": "During bird migration season, thrill-seekers can witness the spectacle from above as they glide alongside flocks of birds on a paragliding adventure, feeling the rush of air beneath their wings.",
-      "tags": ["migration", "paragliding"]
-    },
-    {
-      "text": "After a day of adrenaline-pumping activities, unwind with a leisurely stroll through lush jungle trails, where sightings of exotic birds and elusive wildlife are just around every bend.",
-      "tags": ["cycling", "wildlife", "bird"]
-    },
-    {
-      "text": "At the luxurious coastal resort, guests can indulge in thrilling jet ski rides along the sparkling sea, with occasional sightings of playful sea turtles popping up to greet them.",
-      "tags": ["jet-skis", "sea-turtles", "resort"]
-    },
-    {
-      "text": "Diving enthusiasts flock to the vibrant coral reefs just offshore, where encounters with graceful sea turtles and colorful marine life make every descent a mesmerizing experience.",
-      "tags": ["diving", "sea", "resort", "party"]
-    },
-    {
-      "text": "As the sun sets, the resort transforms into a lively party scene, where guests mingle and dance under the stars, sharing tales of their day's adventures with leopards and sea creatures alike.",
-      "tags": ["leopards", "resort", "party", "sea"]
-    },
-    {
-      "text": "For those seeking excitement on land, guided tours offer the chance to spot elusive leopards prowling through the nearby jungle, adding a touch of wilderness to the resort experience.",
-      "tags": ["leopards", "resort"]
-    },
-    {
-      "text": "Jet ski tours around the resort's coastal area often lead to thrilling encounters with dolphins and sea turtles, creating unforgettable memories for adventure-seekers of all ages.",
-      "tags": ["jet-skis", "sea-turtles", "resort"]
-    },
-    {
-      "text": "After a day of adrenaline-fueled activities, guests can unwind in the comfort of the resort's luxurious accommodations, with stunning views of the sea and lush landscapes where leopards may roam.",
-      "tags": ["resort", "sea", "leopards"]
-    },
-    {
-      "text": "Party enthusiasts can enjoy beachside bonfires and lively gatherings, while nature lovers can embark on guided wildlife safaris to catch glimpses of majestic leopards and nesting sea turtles.",
-      "tags": ["party", "leopards", "resort", "wildlife", "sea-turtles"]
-    },
-    {
-      "text": "Snorkeling excursions provide intimate encounters with sea turtles gliding gracefully through crystal-clear waters, offering a serene contrast to the excitement of jet skiing and partying at the resort.",
-      "tags": ["snorkelling", "sea-turtles"]
-    },
-    {
-      "text": "From thrilling jet ski adventures to serene encounters with sea turtles during snorkeling trips, the resort offers a perfect blend of excitement and relaxation for every guest.",
-      "tags": ["jet-skis", "snorkelling", "resort", "diving", "sea-turtles"]
-    },
-    {
-      "text": "As night falls, the resort comes alive with the sounds of laughter and music, creating an unforgettable atmosphere where guests can dance the night away under the stars after exhilarating days of diving and leopard spotting.",
-      "tags": ["party", "resort", "diving"]
-    },
-    {
-      "text": "Could you recommend a destination that combines ancient history, educational opportunities, and scenic beauty for my next trip?",
-      "tags": ["ancient", "educational", "scenic"]
-    },
-    {
-      "text": "Can you suggest a place where I can enjoy calm surroundings, cycle through picturesque landscapes, and watch stunning sunsets?",
-      "tags": ["calm", "cycling", "sun-set"]
-    },
-    {
-      "text": "Can you recommend a destination where I can experience wildlife, go camping, and enjoy hiking trails?",
-      "tags": ["wildlife", "camping", "hiking"]
-    },
-    {
-      "text": "Could you suggest a rural, tropical location where I can witness a breathtaking sunrise?",
-      "tags": ["tropical", "rural", "sun-rise"]
-    },
-    {
-      "text": "Can you recommend a place with beautiful beaches that are perfect for swimming and snorkeling?",
-      "tags": ["beaches", "swimming", "snorkelling"]
-    },
-    {
-      "text": "Do you know of a place where I can go fishing and also have the chance to see sea turtles?",
-      "tags": ["fishing", "sea-turtles"]
-    },
-    {
-      "text": "Can you suggest a destination that offers thrilling jet ski rides and vibrant nightlife by the sea?",
-      "tags": ["jet-skis", "nightlife", "sea"]
-    },
-    {
-      "text": "Could you recommend a location that combines ancient ruins, religious sites, and a vibrant street food scene?",
-      "tags": ["ruins", "religious", "Street-food", "ancient"]
-    },
-    {
-      "text": "Can you suggest a place where I can go paragliding and also witness the annual migration of birds?",
-      "tags": ["paragliding", "migration", "bird"]
-    },
-    {
-      "text": "Do you know of a destination that offers thrilling zipline adventures and the chance to witness the annual migration of birds?",
-      "tags": ["zipline", "migration", "bird"]
-    },
-    {
-      "text": "Could you know of a place where I can see sea turtles and also enjoy thrilling jet ski rides?",
-      "tags": ["sea-turtles", "jet-skis"]
-    },
-    {
-      "text": "I want to see sea turtles",
-      "tags": ["sea-turtles"]
-    },
-    {
-      "text": "Where can I see sea turtles in Sri Lanka?",
-      "tags": ["sea-turtles"]
-    },
-    {
-      "text": "I want to go snorkeling with sea turtles",
-      "tags": ["snorkelling", "sea-turtles"]
-    },
-    {
-      "text": "I want to see sea turtles in their natural habitat",
-      "tags": ["sea-turtles"]
-    },
-    {
-      "text": "As the vibrant parachutes dotted the sky above, the golden sands of the beach shimmered under the warm sun, creating a picturesque scene of adventure and relaxation.",
-      "tags": ["parachute", "beaches", "sun-set"]
-    },
-    {
-      "text": "Camouflaged within the dappled shade of the forest, the elusive leopard prowled silently, its spotted coat blending seamlessly with the surrounding foliage as it stalked its prey.",
-      "tags": ["leopards", "wildlife"]
-    },
-    {
-      "text": "I'm a traveler seeking the enchanting spectacle of sea turtles gliding through crystal-clear waters, hoping your app can guide me to a destination where I can witness these majestic creatures in their natural habitat.",
-      "tags": ["sea-turtles", "sea"]
-    },
-    {
-      "text": "As a traveler eager for unforgettable encounters with wildlife, I'm yearning to witness the majestic grace of elephants roaming freely in their natural habitat. I'm entrusting your app to lead me to a destination where I can marvel at these gentle giants and appreciate their awe-inspiring presence.",
-      "tags": ["elephants", "wildlife"]
     }
   ]
 }

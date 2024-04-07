@@ -1,9 +1,8 @@
 import torch
 import torch.nn as nn
 from RuuGPTV1 import RuuGPTV1
-from NLPEngineV1 import getVocabSize, encodeSentence
 from config import tags
-
+from NLPEngineV1 import encodeSentence
 
 modelPath = input("Enter Model Path : ")
 if not modelPath.endswith(".pth"):
@@ -53,6 +52,6 @@ with torch.no_grad():
             results.append((tags[idnx], prob.item()))
         results.sort(key=lambda x: x[1], reverse=True)
 
-        for tag, prob in results[:5]:
+        for tag, prob in results[:3]:
             print(f"{tag}: {prob*100:.2f}%")
             print("")

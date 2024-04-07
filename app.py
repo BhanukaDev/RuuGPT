@@ -12,7 +12,7 @@ CORS(app, resource={r"/*": {"origins": "*"}})
 
 
 # Load the latest model
-modeldata = torch.load("V1/models/model22.pth")
+modeldata = torch.load("V1/models/model24.pth")
 
 vocab_size = modeldata["vocab_size"]
 embedding_dim = modeldata["embedding_dim"]
@@ -50,7 +50,7 @@ def handle_generate_tags():
             result_tags.append((tags[index], prob.item()))
         result_tags.sort(key=lambda x: x[1], reverse=True)
 
-    tag_results = result_tags[:2]
+    tag_results = result_tags[:3]
 
     # Extract just the tag names for querying Firestore
     query_tags = [tag for tag, _ in tag_results]
