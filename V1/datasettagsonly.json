@@ -1,0 +1,292 @@
+{
+  "intents": [
+    {
+      "text": "ancient",
+      "tags": ["ancient"]
+    },
+    {
+      "text": "historical",
+      "tags": ["historical"]
+    },
+    {
+      "text": "ruins",
+      "tags": ["ruins"]
+    },
+    {
+      "text": "whale-watching",
+      "tags": ["whale-watching"]
+    },
+    {
+      "text": "waterfall",
+      "tags": ["waterfall"]
+    },
+    {
+      "text": "hiking",
+      "tags": ["hiking"]
+    },
+    {
+      "text": "kasippu pot",
+      "tags": ["kasippu pot"]
+    },
+    {
+      "text": "mountains",
+      "tags": ["mountains"]
+    },
+    {
+      "text": "urban",
+      "tags": ["urban"]
+    },
+    {
+      "text": "nightlife",
+      "tags": ["nightlife"]
+    },
+    {
+      "text": "pubs",
+      "tags": ["pubs"]
+    },
+    {
+      "text": "beaches",
+      "tags": ["beaches"]
+    },
+    {
+      "text": "calm",
+      "tags": ["calm"]
+    },
+    {
+      "text": "scenic",
+      "tags": ["scenic"]
+    },
+    {
+      "text": "natural",
+      "tags": ["natural"]
+    },
+    {
+      "text": "camping",
+      "tags": ["camping"]
+    },
+    {
+      "text": "nuwara",
+      "tags": ["nuwara"]
+    },
+    {
+      "text": "street-food",
+      "tags": ["street-food"]
+    },
+    {
+      "text": "fishing",
+      "tags": ["fishing"]
+    },
+    {
+      "text": "rural",
+      "tags": ["rural"]
+    },
+    {
+      "text": "tropical",
+      "tags": ["tropical"]
+    },
+    {
+      "text": "sinhala",
+      "tags": ["sinhala"]
+    },
+    {
+      "text": "buddhist",
+      "tags": ["buddhist"]
+    },
+    {
+      "text": "islam",
+      "tags": ["islam"]
+    },
+    {
+      "text": "galle",
+      "tags": ["galle"]
+    },
+    {
+      "text": "wildlife",
+      "tags": ["wildlife"]
+    },
+    {
+      "text": "leopards",
+      "tags": ["leopards"]
+    },
+    {
+      "text": "diving",
+      "tags": ["diving"]
+    },
+    {
+      "text": "sea",
+      "tags": ["sea"]
+    },
+    {
+      "text": "cycling",
+      "tags": ["cycling"]
+    },
+    {
+      "text": "sea-turtles",
+      "tags": ["sea-turtles"]
+    },
+    {
+      "text": "jet-skis",
+      "tags": ["jet-skis"]
+    },
+    {
+      "text": "boatriding",
+      "tags": ["boatriding"]
+    },
+    {
+      "text": "native",
+      "tags": ["native"]
+    },
+    {
+      "text": "migration",
+      "tags": ["migration"]
+    },
+    {
+      "text": "wetlands",
+      "tags": ["wetlands"]
+    },
+    {
+      "text": "jaffna",
+      "tags": ["jaffna"]
+    },
+    {
+      "text": "tamil",
+      "tags": ["tamil"]
+    },
+    {
+      "text": "hindu",
+      "tags": ["hindu"]
+    },
+    {
+      "text": "trains",
+      "tags": ["trains"]
+    },
+    {
+      "text": "off-road",
+      "tags": ["off-road"]
+    },
+    {
+      "text": "racing",
+      "tags": ["racing"]
+    },
+    {
+      "text": "sun-set",
+      "tags": ["sun-set"]
+    },
+    {
+      "text": "swamp",
+      "tags": ["swamp"]
+    },
+    {
+      "text": "zipline",
+      "tags": ["zipline"]
+    },
+    {
+      "text": "jungles",
+      "tags": ["jungles"]
+    },
+    {
+      "text": "paragliding",
+      "tags": ["paragliding"]
+    },
+    {
+      "text": "ella",
+      "tags": ["ella"]
+    },
+    {
+      "text": "resort",
+      "tags": ["resort"]
+    },
+    {
+      "text": "party",
+      "tags": ["party"]
+    },
+    {
+      "text": "elephants",
+      "tags": ["elephants"]
+    },
+    {
+      "text": "sun-rise",
+      "tags": ["sun-rise"]
+    },
+    {
+      "text": "religious",
+      "tags": ["religious"]
+    },
+    {
+      "text": "muslim",
+      "tags": ["muslim"]
+    },
+    {
+      "text": "swimming",
+      "tags": ["swimming"]
+    },
+    {
+      "text": "lagoon",
+      "tags": ["lagoon"]
+    },
+    {
+      "text": "safari",
+      "tags": ["safari"]
+    },
+    {
+      "text": "restaurants",
+      "tags": ["restaurants"]
+    },
+    {
+      "text": "food",
+      "tags": ["food"]
+    },
+    {
+      "text": "rafting",
+      "tags": ["rafting"]
+    },
+    {
+      "text": "snorkelling",
+      "tags": ["snorkelling"]
+    },
+    {
+      "text": "surfing",
+      "tags": ["surfing"]
+    },
+    {
+      "text": "malay",
+      "tags": ["malay"]
+    },
+    {
+      "text": "bird",
+      "tags": ["bird"]
+    },
+    {
+      "text": "parachute",
+      "tags": ["parachute"]
+    },
+    {
+      "text": "educational",
+      "tags": ["educational"]
+    },
+    {
+      "text": "waterjet",
+      "tags": ["waterjet"]
+    },
+    {
+      "text": "crawl",
+      "tags": ["crawl"]
+    },
+    {
+      "text": "dry",
+      "tags": ["dry"]
+    },
+    {
+      "text": "christian",
+      "tags": ["christian"]
+    },
+    {
+      "text": "tanks",
+      "tags": ["tanks"]
+    },
+    {
+      "text": "bridges",
+      "tags": ["bridges"]
+    }
+  ]
+}
