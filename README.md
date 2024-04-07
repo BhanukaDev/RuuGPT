@@ -1,2 +1,3 @@
 # RuuGPT
- Custom GPT called Ruu. just to test the technology
+
+A classification model for travel destinations based on provided descriptions of desired places.
