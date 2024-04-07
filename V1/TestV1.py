@@ -70,8 +70,6 @@ with torch.no_grad():
         #     results.clear()
         #     results.extend(temp)
 
-        # for tag, prob in results:
-        #     print(f"{tag}: {prob*100:.2f}%")
-        #     print("")
-        for y in results:
-            print(y)
+        for tag, prob in results:
+            print(f"{tag}: {prob*100:.2f}%")
+            print("")
