@@ -71,5 +71,29 @@ def handle_generate_tags():
     return jsonify(locations)
 
 
+@app.route("/search", methods=["POST"])
+def handle_search():
+    data = request.json
+    query = data.get("query")
+
+    # Ensure a query was provided
+    if not query:
+        return jsonify({"error": "No query provided"}), 400
+
+    locations = []
+    if query:
+        destinations_ref = db.collection("destinations")
+        # docs = destinations_ref.where("name", "==", query).stream()
+        docs = destinations_ref.stream()
+        for doc in docs:
+            doc_data = doc.to_dict()
+            doc_data["id"] = doc.id
+            if (doc_data["name"].lower()).find(query.lower()) != -1 or (
+                doc_data["description"].lower()
+            ).find(query.lower()) != -1:
+                locations.append(doc_data)
+    return jsonify(locations)
+
+
 if __name__ == "__main__":
     app.run(debug=True)
